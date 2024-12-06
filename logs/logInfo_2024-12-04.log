@@ -1,0 +1,48 @@
+[2024-12-04 13:01:24 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.12 with PID 3212 (D:\LJM\GreenGramVer2\build\classes\java\main started by Administrator in D:\LJM\GreenGramVer2)
+[2024-12-04 13:01:24 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-04 13:01:24 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-04 13:01:24 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-04 13:01:25 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-04 13:01:25 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 922 ms
+[2024-12-04 13:01:25 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver2
+[2024-12-04 13:01:26 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-04 13:01:26 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-04 13:01:26 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.93 seconds (process running for 2.37)
+[2024-12-04 17:22:10 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.12 with PID 7164 (D:\LJM\GreenGramVer2\build\classes\java\main started by Administrator in D:\LJM\GreenGramVer2)
+[2024-12-04 17:22:10 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-04 17:22:10 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-04 17:22:10 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-04 17:22:11 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-04 17:22:11 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 799 ms
+[2024-12-04 17:22:11 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver2_2
+[2024-12-04 17:22:11 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-04 17:22:11 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-04 17:22:11 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.672 seconds (process running for 2.027)
+[2024-12-04 17:22:28 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-12-04 17:22:28 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2024-12-04 17:22:29 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-04 17:22:29 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@114cf9e0
+[2024-12-04 17:22:29 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-04 17:22:29 DEBUGhttp-nio-8080-exec-1] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. INSERT INTO user
+        SET uid = '122'
+        , upw = '$2a$10$JU49zwyL.WNDPbOuj1deQuSyOjw1f6k7OyJ7XPGpZmtEegprrRKYa'
+        , nick_name = '122'
+        , pic = '4767b8e1-662d-4000-bd24-3a1da5191d65.jpg'
+ {executed in 1 msec}
+[2024-12-04 17:22:29 DEBUGhttp-nio-8080-exec-1] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: INSERT INTO user
+        SET uid = '122'
+        , upw = '$2a$10$JU49zwyL.WNDPbOuj1deQuSyOjw1f6k7OyJ7XPGpZmtEegprrRKYa'
+        , nick_name = '122'
+        , pic = '4767b8e1-662d-4000-bd24-3a1da5191d65.jpg'
+ {executed in 0 msec}
+[2024-12-04 17:22:29 INFO http-nio-8080-exec-1] [jdbc.resultsettable] 
+|----------|
+|insert_id |
+|----------|
+|22        |
+|----------|
+
+[2024-12-04 17:22:51 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-04 17:22:51 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
