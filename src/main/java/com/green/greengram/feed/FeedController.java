@@ -32,41 +32,27 @@ public class FeedController {
                 .build();
     }
 
+////    @GetMapping
+//    @Operation(summary = "Feed 리스트", description = "loginUserId는 로그인한 사용자의 pk")
+//    public ResultResponse<List<FeedGetRes>> getFeedList(@ParameterObject @ModelAttribute FeedGetReq p) {
+//        log.info("FeedController > getFeedList > p : {}", p);
+//        List<FeedGetRes> list = service.getFeedList(p);
+//
+//
+//        return ResultResponse.<List<FeedGetRes>>builder()
+//                .resultMessage(String.format("%d rows", list.size()))
+//                .resultData(list)
+//                .build();
+//    }
+
+
+
+
     @GetMapping
-    @Operation(summary = "Feed 리스트", description = "loginUserId는 로그인한 사용자의 pk")
-    public ResultResponse<List<FeedGetRes>> getFeedList(@ParameterObject @ModelAttribute FeedGetReq p) {
-        log.info("FeedController > getFeedList > p : {}", p);
-        List<FeedGetRes> list = service.getFeedList(p);
-
-
-        return ResultResponse.<List<FeedGetRes>>builder()
-                .resultMessage(String.format("%d rows", list.size()))
-                .resultData(list)
-                .build();
-    }
-
-
-
-
-    @GetMapping("/get-feedlist")
-    @Operation(summary = "Feed 리스트", description = "loginUserId는 로그인한 사용자의 pk")
-    public ResultResponse<List<FeedGetRes>> getFeedList3(@ParameterObject @ModelAttribute FeedGetReq p) {
-        log.info("FeedController > getFeedList > p : {}", p);
-        List<FeedGetRes> list = service.getFeedList(p);
-
-
-        return ResultResponse.<List<FeedGetRes>>builder()
-                .resultMessage(String.format("%d rows", list.size()))
-                .resultData(list)
-                .build();
-    }
-
-
-    @GetMapping("/get-feedlist2")
     @Operation(summary = "Feed 리스트", description = "loginUserId는 로그인한 사용자의 pk")
     public ResultResponse<List<FeedGetRes>> getFeedList2(@ParameterObject @ModelAttribute FeedGetReq p) {
         log.info("FeedController > getFeedList > p : {}", p);
-        List<FeedGetRes> list = service.getFeedList3(p);
+        List<FeedGetRes> list = service.getFeedList2(p);
 
 
         return ResultResponse.<List<FeedGetRes>>builder()
@@ -75,13 +61,23 @@ public class FeedController {
                 .build();
     }
 
+
+
+
+
+
 //    @GetMapping
 //    @Operation(summary = "사진 및 좋아요 상태 조회", description = "특정 피드의 사진 리스트와 좋아요 상태를 반환합니다.")
-//    public ResultResponse<List<FeedGetRes>> selFeedList(@ParameterObject @ModelAttribute FeedGetReq p) {
+//    public ResultResponse<List<FeedGetRes>> getFeedList2(@ParameterObject @ModelAttribute FeedGetReq p) {
 //        log.info("FeedController > selFeedList > p : {}", p);
 //
+//        // FeedGetReq에서 feedIds와 currentUserId 추출
+//        List<Long> feedIds = p.getFeedIds(); // feedIds를 추출
+//        Long currentUserId = p.getSignedUserId(); // 현재 사용자 ID 추출
 //
-//        List<FeedGetRes> list = service.selFeedList(p);
+//        // 서비스 호출
+//        List<FeedGetRes> list = service.getFeedList2(p);
+//
 //        return ResultResponse.<List<FeedGetRes>>builder()
 //                .resultMessage(String.format("%d개의 항목이 조회되었습니다.", list.size()))
 //                .resultData(list)

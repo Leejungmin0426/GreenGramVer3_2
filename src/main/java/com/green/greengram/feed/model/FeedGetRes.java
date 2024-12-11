@@ -1,6 +1,7 @@
 package com.green.greengram.feed.model;
 
 import com.green.greengram.feed.comment.model.FeedCommentGetRes;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -11,15 +12,26 @@ import java.util.List;
 @Setter
 @ToString
 public class FeedGetRes {
+    @Schema(title = "피드 PK")
     private long feedId;
+    @Schema(title = "피드 내용")
     private String contents;
-    private String createdAt;
+    @Schema(title = "피드 위치")
     private String location;
+    @Schema(title = "피드 생성일시")
+    private String createdAt;
+    @Schema(title = "작성자 유저 PK")
     private long writerUserId;
+    @Schema(title = "작성자 유저 이름")
     private String writerNm;
+    @Schema(title = "작성자 유저 프로필 사진파일명")
     private String writerPic;
+    @Schema(title = "좋아요", description = "1: 좋아요, 0: 좋아요 아님")
+    private int isLike;
 
-
+    @Schema(title = "피드 사진 리스트")
     private List<String> pics;
+    @Schema(title = "피드 댓글")
     private FeedCommentGetRes comment;// 댓글과 관련된 정보가 들어가 있다. 레퍼런스 변수라 주소값 들어가 있다. FeedCommentGetRes의 주소값.
+
 }

@@ -31,6 +31,7 @@
     </select>
 
 
+
     <delete id="deleteFeed">
         DELETE FROM feed
         WHERE feed_id = #{feedId}

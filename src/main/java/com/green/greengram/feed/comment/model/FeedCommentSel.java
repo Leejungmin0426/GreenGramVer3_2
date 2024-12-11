@@ -8,4 +8,6 @@ import lombok.Setter;
 public class FeedCommentSel {
     private long feedId;
     private String comment;
+    private long feedCommentId;
+    private long writerUserId;
 }

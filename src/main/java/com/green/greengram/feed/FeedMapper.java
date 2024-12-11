@@ -1,5 +1,6 @@
 package com.green.greengram.feed;
 
+import com.green.greengram.feed.comment.model.FeedCommentDto;
 import com.green.greengram.feed.model.*;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -14,6 +15,8 @@ public interface FeedMapper {
     List<FeedGetRes> selFeedList (FeedGetReq p);
 
     int deleteFeed (FeedDelReq p);
+
+
 
 //    int checkLikeExists(long feedId, long userId);
 //    void insertLike(long feedId, long userId);

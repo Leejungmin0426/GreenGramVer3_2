@@ -1,6 +1,7 @@
 package com.green.greengram.feed;
 
 import com.green.greengram.feed.model.FeedDelReq;
+import com.green.greengram.feed.model.FeedGetReq;
 import com.green.greengram.feed.model.FeedPicDto;
 import com.green.greengram.feed.model.FeedPicSel;
 import org.apache.ibatis.annotations.Mapper;

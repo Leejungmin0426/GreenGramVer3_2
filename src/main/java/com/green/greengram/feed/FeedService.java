@@ -107,68 +107,59 @@ public class FeedService {
         return list;
     }
 
-//    public List<FeedGetRes> getFeedList2(FeedGetReq p) {
-//
-//        // 1. 피드 리스트 조회
-//        List<FeedGetRes> list = feedMapper.selFeedList(p);
-//
-//        // 2. 피드 ID 목록 추출
-//        List<Long> feedIds = list.stream()
-//                .map(FeedGetRes::getFeedId)
-//                .collect(Collectors.toList());
-//
-//        if (feedIds.isEmpty()) {
-//            return Collections.emptyList();
-//        }
-//
-//        // 3. 피드와 관련된 사진 리스트 조회
-//        List<FeedPicSel> feedPics = feedPicMapper.selFeedPicListByFeedIds(feedIds);
-//
-//        // 4. 피드와 관련된 댓글 리스트 조회 (feedIds 전달)
-//        List<FeedCommentSel> feedComments = feedCommentMapper.selFeedCommentListByFeedIdsLimit4(feedIds);
-//
-//        // 5. 피드 ID를 키로 댓글 리스트를 저장할 맵 생성
-//        Map<Long, List<FeedCommentDto>> commentHashMap = new HashMap<>();
-//        for (FeedCommentSel item : feedComments) {
-//            FeedCommentDto dto = new FeedCommentDto();
-//            dto.setFeedCommentId(item.getFeedCommentId());
-//            dto.setComment(item.getComment());
-//            dto.setWriterUserId(item.getWriterUserId());
-//
-//            commentHashMap.computeIfAbsent(item.getFeedId(), k -> new ArrayList<>()).add(dto);
-//        }
-//
-//        // 6. 피드와 사진, 댓글 데이터 매핑
-//        for (FeedGetRes res : list) {
-//            // 사진 매핑
-//            List<String> pics = feedPics.stream()
-//                    .filter(pic -> pic.getFeedId() == res.getFeedId())
-//                    .map(FeedPicSel::getPic)
-//                    .collect(Collectors.toList());
-//            res.setPics(pics);
-//
-//            // 댓글 매핑
-//            List<FeedCommentDto> comments = commentHashMap.getOrDefault(res.getFeedId(), Collections.emptyList());
-//            FeedCommentGetRes commentRes = new FeedCommentGetRes();
-//            commentRes.setCommentList(comments);
-//            commentRes.setMoreComment(false); // 추가 로직 필요 시 설정
-//            res.setComment(commentRes);
-//        }
-//
-//        return list;
-//    }
-    // select 3번, 피드 5000개 있음, 페이지 당 20개씩 피드 들고 온다.
+
+    public List<FeedGetRes> getFeedList2(FeedGetReq p) {
+        // 1. 피드 리스트 조회
+        List<FeedGetRes> feedList = feedMapper.selFeedList(p);
+
+        // 2. 피드 ID 목록 추출
+        List<Long> feedIds = feedList.stream()
+                .map(FeedGetRes::getFeedId)
+                .collect(Collectors.toList());
+        if (feedIds.isEmpty()) return Collections.emptyList();
+
+        // 3. 사진 및 댓글 데이터 조회
+        Map<Long, List<String>> picHashMap = feedPicMapper.selFeedPicListByFeedIds(feedIds).stream()
+                .collect(Collectors.groupingBy(
+                        FeedPicSel::getFeedId,
+                        Collectors.mapping(FeedPicSel::getPic, Collectors.toList())
+                ));
+        Map<Long, FeedCommentGetRes> commentHashMap = feedCommentMapper.selFeedCommentListByFeedIdsLimit4(feedIds).stream()
+                .collect(Collectors.groupingBy(
+                        FeedCommentDto::getFeedId,
+                        Collectors.collectingAndThen(Collectors.toList(), comments -> {
+                            FeedCommentGetRes commentRes = new FeedCommentGetRes();
+                            commentRes.setCommentList(comments.size() > 4
+                                    ? comments.subList(0, 4)
+                                    : comments);
+                            commentRes.setMoreComment(comments.size() > 4);
+                            return commentRes;
+                        })
+                ));
+
+        // 4. 피드 리스트에 사진 및 댓글 매핑
+        feedList.forEach(feed -> {
+            feed.setPics(picHashMap.getOrDefault(feed.getFeedId(), Collections.emptyList()));
+            feed.setComment(commentHashMap.getOrDefault(feed.getFeedId(), new FeedCommentGetRes()));
+        });
+
+        return feedList;
+    }
+
+    //select 3번, 피드 5,000개 있음, 페이지당 20개씩 가져온다.
     public List<FeedGetRes> getFeedList3(FeedGetReq p) {
         //피드 리스트
         List<FeedGetRes> list = feedMapper.selFeedList(p);
 
         //feed_id를 골라내야 한다.
         List<Long> feedIds4 = list.stream().map(FeedGetRes::getFeedId).collect(Collectors.toList());
-        List<Long> feedIds5 = list.stream().map(item -> ((FeedGetRes)item).getFeedId()).toList();
-        List<Long> feedIds6 = list.stream().map(item -> { return ((FeedGetRes)item).getFeedId();}).toList();
+        List<Long> feedIds5 = list.stream().map(item -> ((FeedGetRes) item).getFeedId()).toList();
+        List<Long> feedIds6 = list.stream().map(item -> {
+            return ((FeedGetRes) item).getFeedId();
+        }).toList();
 
         List<Long> feedIds = new ArrayList<>(list.size());
-        for(FeedGetRes item : list) {
+        for (FeedGetRes item : list) {
             feedIds.add(item.getFeedId());
         }
         log.info("feedIds: {}", feedIds);
@@ -178,54 +169,36 @@ public class FeedService {
         log.info("feedPicList: {}", feedPicList);
 
         Map<Long, List<String>> picHashMap = new HashMap<>();
-        for(FeedPicSel item : feedPicList) {
+        for (FeedPicSel item : feedPicList) {
             long feedId = item.getFeedId();
-            if(!picHashMap.containsKey(feedId)) {
-                picHashMap.put(feedId, new ArrayList<String>(2));
+            if (!picHashMap.containsKey(feedId)) {
+                picHashMap.put(feedId, new ArrayList<>(3));
             }
             List<String> pics = picHashMap.get(feedId);
             pics.add(item.getPic());
         }
 
-
-
-//        int lastIndex = 0;
-//        for(FeedGetRes res : list) {
-//            List<String> pics = new ArrayList<>(2);
-//            for(int i=lastIndex; i<feedPicList.size(); i++) {
-//                FeedPicSel feedPicSel = feedPicList.get(i);
-//                if(res.getFeedId() == feedPicSel.getFeedId()) {
-//                    pics.add(feedPicSel.getPic());
-//                } else {
-//                    res.setPics(pics);
-//                    lastIndex = i;
-//                    break;
-//                }
-//            }
-//        }
-
         //피드와 관련된 댓글 리스트
         List<FeedCommentDto> feedCommentList = feedCommentMapper.selFeedCommentListByFeedIdsLimit4(feedIds);
         Map<Long, FeedCommentGetRes> commentHashMap = new HashMap<>();
-        for(FeedCommentDto item : feedCommentList) {
+        for (FeedCommentDto item : feedCommentList) {
             long feedId = item.getFeedId();
-            if(!commentHashMap.containsKey(feedId)) {
+            if (!commentHashMap.containsKey(feedId)) {
                 FeedCommentGetRes feedCommentGetRes = new FeedCommentGetRes();
-                feedCommentGetRes.setCommentList(new ArrayList<>());
+                feedCommentGetRes.setCommentList(new ArrayList<>(4));
                 commentHashMap.put(feedId, feedCommentGetRes);
             }
             FeedCommentGetRes feedCommentGetRes = commentHashMap.get(feedId);
             feedCommentGetRes.getCommentList().add(item);
         }
 
-        for(FeedGetRes res : list) {
+        for (FeedGetRes res : list) {
             res.setPics(picHashMap.get(res.getFeedId()));
             FeedCommentGetRes feedCommentGetRes = commentHashMap.get(res.getFeedId());
 
-            if(feedCommentGetRes == null) {
+            if (feedCommentGetRes == null) {
                 feedCommentGetRes = new FeedCommentGetRes();
                 feedCommentGetRes.setCommentList(new ArrayList<>());
-                res.setComment(feedCommentGetRes);
             } else if (feedCommentGetRes.getCommentList().size() == 4) {
                 feedCommentGetRes.setMoreComment(true);
                 feedCommentGetRes.getCommentList().remove(feedCommentGetRes.getCommentList().size() - 1);
@@ -259,7 +232,48 @@ public class FeedService {
     }
 
     */
-  }
+
+
+    public List<FeedGetRes> getFeedList4(FeedGetReq p) {
+        // 1. 피드 리스트 조회
+        List<FeedGetRes> feedList = feedMapper.selFeedList(p);
+
+        // 2. 피드 ID 목록 추출
+        List<Long> feedIds = feedList.stream()
+                .map(FeedGetRes::getFeedId)
+                .collect(Collectors.toList());
+        if (feedIds.isEmpty()) return Collections.emptyList();
+
+        // 3. 사진 및 댓글 데이터 조회
+        Map<Long, List<String>> picHashMap = feedPicMapper.selFeedPicListByFeedIds(feedIds).stream()
+                .collect(Collectors.groupingBy(
+                        FeedPicSel::getFeedId,
+                        Collectors.mapping(FeedPicSel::getPic, Collectors.toList())
+                ));
+        Map<Long, FeedCommentGetRes> commentHashMap = feedCommentMapper.selFeedCommentListByFeedIdsLimit4(feedIds).stream()
+                .collect(Collectors.groupingBy(
+                        FeedCommentDto::getFeedId,
+                        Collectors.collectingAndThen(Collectors.toList(), comments -> {
+                            FeedCommentGetRes commentRes = new FeedCommentGetRes();
+                            commentRes.setCommentList(comments.size() > 4
+                                    ? comments.subList(0, 4)
+                                    : comments);
+                            commentRes.setMoreComment(comments.size() > 4);
+                            return commentRes;
+                        })
+                ));
+
+        // 4. 피드 리스트에 사진 및 댓글 매핑
+        feedList.forEach(feed -> {
+            feed.setPics(picHashMap.getOrDefault(feed.getFeedId(), Collections.emptyList()));
+            feed.setComment(commentHashMap.getOrDefault(feed.getFeedId(), new FeedCommentGetRes()));
+        });
+
+        return feedList;
+    }
+
+
+}
 
 
 
