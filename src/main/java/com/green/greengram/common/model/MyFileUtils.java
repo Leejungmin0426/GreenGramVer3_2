@@ -12,6 +12,10 @@ import java.util.UUID;
 @Slf4j
 @Component //빈등록
 public class MyFileUtils {
+    public String getUploadPath() {
+        return uploadPath;
+    }
+
     private final String uploadPath;
 
     /*
@@ -28,12 +32,12 @@ public class MyFileUtils {
     // D:/2024-02/download/greengram_ver1/ddd/aaa
     //디렉토리 생성
     public String makeFolders(String path) {
-        File file = new File(uploadPath,  path);
+        File file = new File(uploadPath, path);
         // static 아님  >>  객체화하고 주소값.(file.)으로 호출했기 때문에
         // 리턴타입은 boolean  >>  if()안에서 호출했기 때문에
         // 파라미터는 없음   >>  호출 때 인자를 보내지 않았기 때문에
         // 메소드명은  >>  exists였다.
-        if(!file.exists()) {
+        if (!file.exists()) {
             file.mkdirs();
         }
         return file.getAbsolutePath();
@@ -66,4 +70,21 @@ public class MyFileUtils {
         mf.transferTo(file); // 여기서도 IOExection 예외를 던지고 있어서 호출 하는 쪽에서도 받아서 처리하던지 던지던지 해야한다. 그래서 throws 처리함.
     }
 
+    public void deleteFolder(String path, boolean deleteRootFolder) {
+        File folder = new File(path);
+        if (folder.exists() && folder.isDirectory()) {
+            File[] includedFiles = folder.listFiles();
+
+            for (File f : includedFiles) {
+                if (f.isDirectory()) {
+                    deleteFolder(f.getAbsolutePath(), true);
+                } else {
+                    f.delete();
+                }
+            }
+            if (deleteRootFolder) {
+                folder.delete();
+            }
+        }
+    }
 }

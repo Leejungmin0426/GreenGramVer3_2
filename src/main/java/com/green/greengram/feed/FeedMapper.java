@@ -8,7 +8,13 @@ import java.util.List;
 @Mapper
 public interface FeedMapper {
     int insFeed (FeedPostReq p);
+
+
+
     List<FeedGetRes> selFeedList (FeedGetReq p);
+
+    int deleteFeed (FeedDelReq p);
+
 //    int checkLikeExists(long feedId, long userId);
 //    void insertLike(long feedId, long userId);
 }

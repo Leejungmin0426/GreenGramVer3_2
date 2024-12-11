@@ -25,6 +25,33 @@
         LIMIT #{startIdx}, #{size}
     </select>
 
+    <select id="selFeedCommentListByFeedIdsLimit4">
+        SELECT
+        A.feed_id,
+        A.feed_comment_id,
+        A.comment,
+        U.user_id AS writerUserId,
+        IF(U.nick_name IS NULL, U.uid, U.nick_name) AS writerName,
+        U.pic AS writerPic
+        FROM feed_comment A
+        LEFT JOIN user U ON A.user_id = U.user_id
+        WHERE A.feed_id IN
+        <foreach collection="feedIds" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+        AND (
+        SELECT COUNT(*)
+        FROM feed_comment C
+        WHERE C.feed_id = A.feed_id
+        AND (
+        SELECT COUNT(*)
+        FROM feed_comment C
+        WHERE C.feed_id = A.feed_id
+        AND C.feed_comment_id <![CDATA[<]]> A.feed_comment_id
+        ) <![CDATA[<]]> 4
+        ORDER BY A.feed_id, A.feed_comment_id DESC;
+    </select>
+
     <delete id="delFeedComment">
         DELETE FROM feed_comment
         WHERE feed_comment_id = #{feedCommentId}

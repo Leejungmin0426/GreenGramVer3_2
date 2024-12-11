@@ -1,5 +1,6 @@
 package com.green.greengram.feed.comment.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,4 +20,7 @@ public class FeedCommentDto {
     private String writerNm;
     @Schema(title = "피드 댓글 작성자 유저 프로필 사진 파일명")
     private String writerPic;
+
+    @JsonIgnore
+    private long feedId;
 }

@@ -32,4 +32,15 @@
         WHERE feed_id = #{feedId}
     </select>
 
+
+    <select id="selFeedPicListByFeedIds">
+        SELECT feed_id AS feedId
+        , pic
+        FROM feed_pic
+        WHERE feed_id in
+        <foreach collection="feedIds" item="item" open = "(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
 </mapper>

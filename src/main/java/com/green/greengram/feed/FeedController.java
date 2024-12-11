@@ -1,10 +1,7 @@
 package com.green.greengram.feed;
 
 import com.green.greengram.common.ResultResponse;
-import com.green.greengram.feed.model.FeedGetReq;
-import com.green.greengram.feed.model.FeedGetRes;
-import com.green.greengram.feed.model.FeedPostReq;
-import com.green.greengram.feed.model.FeedPostRes;
+import com.green.greengram.feed.model.*;
 import io.swagger.v3.oas.annotations.Operation;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
@@ -51,7 +48,32 @@ public class FeedController {
 
 
 
+    @GetMapping("/get-feedlist")
+    @Operation(summary = "Feed 리스트", description = "loginUserId는 로그인한 사용자의 pk")
+    public ResultResponse<List<FeedGetRes>> getFeedList3(@ParameterObject @ModelAttribute FeedGetReq p) {
+        log.info("FeedController > getFeedList > p : {}", p);
+        List<FeedGetRes> list = service.getFeedList(p);
 
+
+        return ResultResponse.<List<FeedGetRes>>builder()
+                .resultMessage(String.format("%d rows", list.size()))
+                .resultData(list)
+                .build();
+    }
+
+
+    @GetMapping("/get-feedlist2")
+    @Operation(summary = "Feed 리스트", description = "loginUserId는 로그인한 사용자의 pk")
+    public ResultResponse<List<FeedGetRes>> getFeedList2(@ParameterObject @ModelAttribute FeedGetReq p) {
+        log.info("FeedController > getFeedList > p : {}", p);
+        List<FeedGetRes> list = service.getFeedList3(p);
+
+
+        return ResultResponse.<List<FeedGetRes>>builder()
+                .resultMessage(String.format("%d rows", list.size()))
+                .resultData(list)
+                .build();
+    }
 
 //    @GetMapping
 //    @Operation(summary = "사진 및 좋아요 상태 조회", description = "특정 피드의 사진 리스트와 좋아요 상태를 반환합니다.")
@@ -92,6 +114,17 @@ public class FeedController {
         }
         return ip;
     }
+
+    @DeleteMapping
+    public ResultResponse<Integer> deleteFeed(@ParameterObject @ModelAttribute FeedDelReq p) {
+        log.info("FeedController > deleteFeed > p: {}", p);
+        int res = service.deleteFeed(p);
+        return ResultResponse.<Integer>builder()
+                .resultMessage("게시물 삭제가 완료되었습니다.")
+                .resultData(res)
+                .build();
+    }
+
 }
 
 
