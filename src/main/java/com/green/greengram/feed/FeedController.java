@@ -52,7 +52,7 @@ public class FeedController {
     @Operation(summary = "Feed 리스트", description = "loginUserId는 로그인한 사용자의 pk")
     public ResultResponse<List<FeedGetRes>> getFeedList2(@ParameterObject @ModelAttribute FeedGetReq p) {
         log.info("FeedController > getFeedList > p : {}", p);
-        List<FeedGetRes> list = service.getFeedList2(p);
+        List<FeedGetRes> list = service.getFeedList3(p);
 
 
         return ResultResponse.<List<FeedGetRes>>builder()

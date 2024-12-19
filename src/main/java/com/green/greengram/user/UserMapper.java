@@ -7,8 +7,9 @@ import java.util.List;
 
 @Mapper
 public interface UserMapper {
-    int insUser (UserSignUpReq p);
+    int insUser(UserSignUpReq p);
     UserSignInRes selUserByUid(String uid);
     UserInfoGetRes selUserInfo(UserInfoGetReq p);
-    int updUserPic (UserPicPatchReq p);
+    UserInfoGetRes selUserInfo2(UserInfoGetReq p);
+    int updUserPic(UserPicPatchReq p); // 사용자 역할 조회
 }

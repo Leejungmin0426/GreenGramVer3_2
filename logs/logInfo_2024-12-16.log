@@ -1,0 +1,30 @@
+[2024-12-16 11:16:09 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.12 with PID 11688 (D:\LJM\GreenGramSecurity\build\classes\java\main started by Administrator in D:\LJM\GreenGramSecurity)
+[2024-12-16 11:16:09 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-16 11:16:09 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-16 11:16:09 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-16 11:16:10 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-16 11:16:10 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1139 ms
+[2024-12-16 11:16:10 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver3
+[2024-12-16 11:16:11 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 28ece2d9-d524-4fa0-b016-23f3c8e5b7bc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-12-16 11:16:11 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-16 11:16:11 WARN restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] Unable to start LiveReload server
+[2024-12-16 11:16:11 WARN restartedMain] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[2024-12-16 11:16:11 ERRORrestartedMain] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+

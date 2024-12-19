@@ -1,6 +1,7 @@
 package com.green.greengram.feed;
 
 import com.green.greengram.common.model.MyFileUtils;
+import com.green.greengram.config.security.AuthenticationFacade;
 import com.green.greengram.feed.comment.FeedCommentMapper;
 import com.green.greengram.feed.comment.model.*;
 import com.green.greengram.feed.like.FeedLikeMapper;
@@ -29,9 +30,11 @@ public class FeedService {
     private final FeedLikeMapper feedLikeMapper;
     private final MyFileUtils myFileUtils;
     private final FeedLikeService feedLikeService;
+    private final AuthenticationFacade authenticationFacade;
 
     @Transactional
     public FeedPostRes postFeed(List<MultipartFile> pics, FeedPostReq p) {
+        p.setWriterUserId(authenticationFacade.getSignedUserId());
         int result = feedMapper.insFeed(p);
 
         // --------------- 파일 등록
@@ -76,10 +79,14 @@ public class FeedService {
 //    }
 
     public List<FeedGetRes> getFeedList(FeedGetReq p) {
+        p.setSignedUserId(authenticationFacade.getSignedUserId());
         // N + 1 이슈 발생
         List<FeedGetRes> list = feedMapper.selFeedList(p);
         log.info("listTest = {}", list.toString());
 //
+        if (list.size() == 0) {
+            return list;
+        }
 
         for (int i = 0; i < list.size(); i++) {
             FeedGetRes item = list.get(i);
@@ -109,8 +116,15 @@ public class FeedService {
 
 
     public List<FeedGetRes> getFeedList2(FeedGetReq p) {
+
+        p.setSignedUserId(authenticationFacade.getSignedUserId());
+
         // 1. 피드 리스트 조회
         List<FeedGetRes> feedList = feedMapper.selFeedList(p);
+
+        if (feedList.size() == 0) {
+            return feedList;
+        }
 
         // 2. 피드 ID 목록 추출
         List<Long> feedIds = feedList.stream()
@@ -148,6 +162,8 @@ public class FeedService {
 
     //select 3번, 피드 5,000개 있음, 페이지당 20개씩 가져온다.
     public List<FeedGetRes> getFeedList3(FeedGetReq p) {
+
+        p.setSignedUserId(authenticationFacade.getSignedUserId());
         //피드 리스트
         List<FeedGetRes> list = feedMapper.selFeedList(p);
 
@@ -212,6 +228,11 @@ public class FeedService {
 
     @Transactional
     public int deleteFeed(FeedDelReq p) {
+        p.setSignedUserId(authenticationFacade.getSignedUserId());
+        //피드 사진 삭제
+        String deletePath = String.format("%s/feed/%d", myFileUtils.getUploadPath(), p.getFeedId());
+        myFileUtils.deleteFolder(deletePath, true);
+        //피드 삭제
         return feedMapper.deleteFeed(p);
     }
 

@@ -25,7 +25,7 @@
     </select>
 
 
-    <select id="selUserInfo">
+    <select id="selUserInfo2">
 
         SELECT A.user_id AS userId, A.pic, A.created_at AS createdAt
         , IF(A.nick_name IS NULL, A.uid, A.nick_name) AS nickName

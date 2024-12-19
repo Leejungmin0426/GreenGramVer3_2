@@ -1,10 +1,8 @@
 package com.green.greengram.feed.comment;
 
+
 import com.green.greengram.common.ResultResponse;
-import com.green.greengram.feed.comment.model.FeedCommentDelReq;
-import com.green.greengram.feed.comment.model.FeedCommentGetReq;
-import com.green.greengram.feed.comment.model.FeedCommentGetRes;
-import com.green.greengram.feed.comment.model.FeedCommentPostReq;
+import com.green.greengram.feed.comment.model.*;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -31,6 +29,7 @@ public class FeedCommentController {
                 .resultData(feedCommentId)
                 .build();
     }
+
     @GetMapping
     @Operation(summary = "피드 댓글 리스트", description = "댓글 더보기 처리 - 파라미터를 ModelAttribute를 이용해서 받음")
     public ResultResponse<FeedCommentGetRes> getFeedComment(@ParameterObject @ModelAttribute FeedCommentGetReq p) {
@@ -55,6 +54,7 @@ public class FeedCommentController {
                 .resultData(res)
                 .build();
     }
+
     //삭제시 받아야 할 데이터 feedCommentId + 로그인한 사용자의 PK  (feed_comment_id, signed_user_id)
     //FE - data 전달방식 : Query-String
     @DeleteMapping

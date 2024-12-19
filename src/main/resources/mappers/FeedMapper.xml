@@ -11,7 +11,9 @@
     </insert>
 
     <select id="selFeedList">
-        SELECT A.feed_id AS feedId, A.contents, A.location
+        SELECT A.feed_id AS feedId
+        , A.contents
+        , A.location
         , A.created_at AS createdAt
         , A.writer_user_id AS writerUserId
         , IF(B.nick_name IS NULL, B.uid, B.nick_name) AS writerNm

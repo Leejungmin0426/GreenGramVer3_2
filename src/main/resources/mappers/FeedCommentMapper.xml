@@ -30,8 +30,8 @@
 
     <select id="selFeedCommentListByFeedIdsLimit4">
         SELECT
-        A.feed_id,
-        A.feed_comment_id,
+        A.feed_id AS feedId,
+        A.feed_comment_id AS feedCommentId,
         A.comment,
         U.user_id AS writerUserId,
         IF(U.nick_name IS NULL, U.uid, U.nick_name) AS writerName,
