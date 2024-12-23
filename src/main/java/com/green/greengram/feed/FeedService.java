@@ -9,6 +9,7 @@ import com.green.greengram.feed.like.FeedLikeService;
 import com.green.greengram.feed.like.model.FeedLikeReq;
 import com.green.greengram.feed.like.model.FeedLikeRes;
 import com.green.greengram.feed.model.*;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.annotations.Param;
@@ -33,7 +34,9 @@ public class FeedService {
     private final AuthenticationFacade authenticationFacade;
 
     @Transactional
+    //자동 커밋 종료
     public FeedPostRes postFeed(List<MultipartFile> pics, FeedPostReq p) {
+
         p.setWriterUserId(authenticationFacade.getSignedUserId());
         int result = feedMapper.insFeed(p);
 
@@ -78,7 +81,7 @@ public class FeedService {
 //        }
 //    }
 
-    public List<FeedGetRes> getFeedList(FeedGetReq p) {
+    public List<FeedGetRes> getFeedList(@Valid FeedGetReq p) {
         p.setSignedUserId(authenticationFacade.getSignedUserId());
         // N + 1 이슈 발생
         List<FeedGetRes> list = feedMapper.selFeedList(p);
@@ -161,7 +164,7 @@ public class FeedService {
     }
 
     //select 3번, 피드 5,000개 있음, 페이지당 20개씩 가져온다.
-    public List<FeedGetRes> getFeedList3(FeedGetReq p) {
+    public List<FeedGetRes> getFeedList3(@Valid FeedGetReq p) {
 
         p.setSignedUserId(authenticationFacade.getSignedUserId());
         //피드 리스트

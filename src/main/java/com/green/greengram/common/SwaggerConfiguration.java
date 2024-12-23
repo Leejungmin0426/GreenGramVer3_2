@@ -24,6 +24,6 @@ import org.springframework.security.config.annotation.web.SecurityMarker;
         , in = SecuritySchemeIn.HEADER
         , bearerFormat = "JWT"
         , scheme = "Bearer"
-)
+) // Swagger에서도 인증처리 가능하도록! 추가추가
 
 public class SwaggerConfiguration {}

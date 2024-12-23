@@ -1,0 +1,1326 @@
+[2024-12-20 09:39:09 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.12 with PID 8284 (D:\LJM\GreenGramSecurity\build\classes\java\main started by Administrator in D:\LJM\GreenGramSecurity)
+[2024-12-20 09:39:09 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-20 09:39:09 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-20 09:39:09 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-20 09:39:10 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-20 09:39:10 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-20 09:39:10 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-20 09:39:10 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[2024-12-20 09:39:10 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-20 09:39:10 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 960 ms
+[2024-12-20 09:39:10 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver3
+[2024-12-20 09:39:10 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: f80aa70a-ddc9-4f25-99e6-816d01a7f81d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-12-20 09:39:10 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-20 09:39:11 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-20 09:39:11 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-20 09:39:11 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-20 09:39:11 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 2.192 seconds (process running for 2.554)
+[2024-12-20 09:39:15 INFO http-nio-8080-exec-2] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-20 09:39:15 INFO http-nio-8080-exec-2] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-12-20 09:39:15 INFO http-nio-8080-exec-2] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+[2024-12-20 09:39:15 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 09:39:16 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 09:39:16 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 09:39:16 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 09:39:16 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 09:39:16 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 09:39:16 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 09:39:16 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 09:39:16 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 09:39:16 INFO http-nio-8080-exec-10] [org.springdoc.api.AbstractOpenApiResource] Init duration for springdoc-openapi is: 219 ms
+[2024-12-20 09:39:35 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 09:39:35 INFO http-nio-8080-exec-9] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-20 09:39:35 INFO http-nio-8080-exec-9] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@54124032
+[2024-12-20 09:39:35 INFO http-nio-8080-exec-9] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-20 09:39:35 DEBUGhttp-nio-8080-exec-9] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT user_id AS userId
+        , IFNULL(nick_name, uid) AS nickName
+        , pic, upw
+        FROM user
+        WHERE uid= '쩡미'
+ {executed in 1 msec}
+[2024-12-20 09:39:35 INFO http-nio-8080-exec-9] [jdbc.resultsettable] 
+|--------|---------|-----------------------------------------|-------------------------------------------------------------|
+|user_id |nickname |pic                                      |upw                                                          |
+|--------|---------|-----------------------------------------|-------------------------------------------------------------|
+|2       |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |$2a$10$QMo32sTgteG9Ut1i.HVLGuc5fLpr1g1Kf64txdPQIlkjZE1Zw3ai6 |
+|--------|---------|-----------------------------------------|-------------------------------------------------------------|
+
+[2024-12-20 09:39:51 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 09:39:51 INFO http-nio-8080-exec-2] [com.green.greengram.user.UserService] refreshToken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJncmVlbkBncmVlbi5rciIsImlhdCI6MTczNDY1NTE3NSwiZXhwIjoxNzM1OTUxMTc1LCJzaWduZWRVc2VyIjoie1wic2lnbmVkVXNlcklkXCI6MixcInJvbGVzXCI6W1wiUk9MRV9VU0VSXCIsXCJST0xFX0FETUlOXCJdfSJ9.WVpk6pXcOfR_oxycDhWmXoLC9L77AnjmXibC3FhhW6n9t-bk0hFGh7V1oEZJOQgrFdl4JNi-k4Gsr1zCahAbKA
+[2024-12-20 09:53:34 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
+[2024-12-20 09:53:34 INFO Thread-5] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-12-20 09:53:34 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-20 09:53:34 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-20 09:53:34 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.12 with PID 8284 (D:\LJM\GreenGramSecurity\build\classes\java\main started by Administrator in D:\LJM\GreenGramSecurity)
+[2024-12-20 09:53:34 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-20 09:53:35 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-20 09:53:35 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-20 09:53:35 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-20 09:53:35 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[2024-12-20 09:53:35 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-20 09:53:35 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 337 ms
+[2024-12-20 09:53:35 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver3
+[2024-12-20 09:53:35 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 62eace66-3cb1-498a-b1dd-c2e48de4062b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-12-20 09:53:35 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-20 09:53:35 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-20 09:53:35 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-20 09:53:35 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-20 09:53:35 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 0.606 seconds (process running for 866.905)
+[2024-12-20 09:53:35 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
+[2024-12-20 09:53:36 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+[2024-12-20 09:53:36 INFO Thread-7] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-12-20 09:53:37 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.12 with PID 8284 (D:\LJM\GreenGramSecurity\build\classes\java\main started by Administrator in D:\LJM\GreenGramSecurity)
+[2024-12-20 09:53:37 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-20 09:53:37 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-20 09:53:37 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-20 09:53:37 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-20 09:53:37 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[2024-12-20 09:53:37 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-20 09:53:37 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 211 ms
+[2024-12-20 09:53:37 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver3
+[2024-12-20 09:53:37 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 15c757de-619e-413b-baae-621573d78d61
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-12-20 09:53:37 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-20 09:53:37 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-20 09:53:37 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-20 09:53:37 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-20 09:53:37 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 0.391 seconds (process running for 868.804)
+[2024-12-20 09:53:37 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
+[2024-12-20 09:57:23 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+[2024-12-20 09:57:23 INFO Thread-11] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-12-20 09:57:23 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.12 with PID 8284 (D:\LJM\GreenGramSecurity\build\classes\java\main started by Administrator in D:\LJM\GreenGramSecurity)
+[2024-12-20 09:57:23 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-20 09:57:23 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-20 09:57:23 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-20 09:57:23 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-20 09:57:23 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[2024-12-20 09:57:23 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-20 09:57:23 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 218 ms
+[2024-12-20 09:57:23 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver3
+[2024-12-20 09:57:24 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 4b230143-a100-4bf2-9f1d-046b62e9df0c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-12-20 09:57:24 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-20 09:57:24 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-20 09:57:24 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-20 09:57:24 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-20 09:57:24 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 0.413 seconds (process running for 1095.504)
+[2024-12-20 09:57:24 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
+[2024-12-20 10:13:29 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)
+[2024-12-20 10:13:29 INFO Thread-15] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:13:29 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.12 with PID 8284 (D:\LJM\GreenGramSecurity\build\classes\java\main started by Administrator in D:\LJM\GreenGramSecurity)
+[2024-12-20 10:13:29 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-20 10:13:29 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-20 10:13:29 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:13:29 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-20 10:13:29 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[2024-12-20 10:13:29 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-20 10:13:29 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 232 ms
+[2024-12-20 10:13:29 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver3
+[2024-12-20 10:13:29 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: bbf89ec0-3212-40c5-9add-84fd62c9082b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-12-20 10:13:29 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-20 10:13:29 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-20 10:13:29 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:13:29 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-20 10:13:29 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 0.435 seconds (process running for 2061.004)
+[2024-12-20 10:13:29 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
+[2024-12-20 10:13:31 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 5 class path changes (5 additions, 0 deletions, 0 modifications)
+[2024-12-20 10:13:31 INFO Thread-19] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:13:31 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.12 with PID 8284 (D:\LJM\GreenGramSecurity\build\classes\java\main started by Administrator in D:\LJM\GreenGramSecurity)
+[2024-12-20 10:13:31 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-20 10:13:31 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-20 10:13:31 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:13:31 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-20 10:13:31 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[2024-12-20 10:13:31 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-20 10:13:31 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 203 ms
+[2024-12-20 10:13:31 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver3
+[2024-12-20 10:13:31 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: ce810a7a-d794-46f1-a92d-96ff1edf1c4c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-12-20 10:13:31 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-20 10:13:31 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-20 10:13:31 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:13:31 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-20 10:13:31 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 0.373 seconds (process running for 2062.863)
+[2024-12-20 10:13:31 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
+[2024-12-20 10:14:23 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-20 10:14:23 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-12-20 10:14:23 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2024-12-20 10:14:23 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:14:27 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:14:27 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:14:43 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.12 with PID 4084 (D:\LJM\GreenGramSecurity\build\classes\java\main started by Administrator in D:\LJM\GreenGramSecurity)
+[2024-12-20 10:14:43 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-20 10:14:43 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-20 10:14:43 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-20 10:14:43 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-20 10:14:43 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:14:43 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-20 10:14:43 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[2024-12-20 10:14:43 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-20 10:14:43 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 853 ms
+[2024-12-20 10:14:44 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver3
+[2024-12-20 10:14:44 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: e5154e96-b6f0-4c0a-ada5-90c5cd02e28e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-12-20 10:14:44 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-20 10:14:44 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-20 10:14:44 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:14:44 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-20 10:14:44 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 1.882 seconds (process running for 2.245)
+[2024-12-20 10:14:49 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-20 10:14:49 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-12-20 10:14:49 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2024-12-20 10:14:49 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:15:45 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.12 with PID 7568 (D:\LJM\GreenGramSecurity\build\classes\java\main started by Administrator in D:\LJM\GreenGramSecurity)
+[2024-12-20 10:15:45 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-20 10:15:45 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-20 10:15:45 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-20 10:15:45 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-20 10:15:45 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:15:45 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-20 10:15:45 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[2024-12-20 10:15:46 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-20 10:15:46 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 868 ms
+[2024-12-20 10:15:46 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver3
+[2024-12-20 10:15:46 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: b6539903-ea90-40ba-b62b-93444764216d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-12-20 10:15:46 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-20 10:15:46 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-20 10:15:46 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:15:46 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-20 10:15:46 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 1.902 seconds (process running for 2.269)
+[2024-12-20 10:15:49 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-20 10:15:49 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-12-20 10:15:49 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+[2024-12-20 10:15:49 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:16:37 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+[2024-12-20 10:16:37 INFO Thread-5] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:16:38 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.12 with PID 7568 (D:\LJM\GreenGramSecurity\build\classes\java\main started by Administrator in D:\LJM\GreenGramSecurity)
+[2024-12-20 10:16:38 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-20 10:16:38 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-20 10:16:38 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:16:38 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-20 10:16:38 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[2024-12-20 10:16:38 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-20 10:16:38 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 233 ms
+[2024-12-20 10:16:38 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver3
+[2024-12-20 10:16:38 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: c5b721d5-83d4-4eb8-bd6a-45224be1da1e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-12-20 10:16:38 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-20 10:16:38 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-20 10:16:38 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:16:38 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-20 10:16:38 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 0.423 seconds (process running for 54.005)
+[2024-12-20 10:16:38 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
+[2024-12-20 10:17:23 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.12 with PID 10472 (D:\LJM\GreenGramSecurity\build\classes\java\main started by Administrator in D:\LJM\GreenGramSecurity)
+[2024-12-20 10:17:23 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-20 10:17:23 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-20 10:17:23 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-20 10:17:24 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-20 10:17:24 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:17:24 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-20 10:17:24 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[2024-12-20 10:17:24 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-20 10:17:24 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 890 ms
+[2024-12-20 10:17:24 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver3
+[2024-12-20 10:17:24 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 6440c9d8-8a77-4dd3-a931-588637200f18
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-12-20 10:17:24 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-20 10:17:24 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-12-20 10:17:24 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-20 10:17:24 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:17:24 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-20 10:17:24 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 2.049 seconds (process running for 2.433)
+[2024-12-20 10:17:28 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-20 10:17:28 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-12-20 10:17:28 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+[2024-12-20 10:17:28 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:28 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:28 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:28 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:28 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:28 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:28 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:28 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:31 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:31 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:31 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:31 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:31 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:31 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:31 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:31 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:32 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-3] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-3] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@45ede3c1
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-3] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-20 10:17:37 DEBUGhttp-nio-8080-exec-3] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT user_id AS userId
+        , IFNULL(nick_name, uid) AS nickName
+        , pic, upw
+        FROM user
+        WHERE uid= '쩡미'
+ {executed in 0 msec}
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-3] [jdbc.resultsettable] 
+|--------|---------|-----------------------------------------|-------------------------------------------------------------|
+|user_id |nickname |pic                                      |upw                                                          |
+|--------|---------|-----------------------------------------|-------------------------------------------------------------|
+|2       |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |$2a$10$QMo32sTgteG9Ut1i.HVLGuc5fLpr1g1Kf64txdPQIlkjZE1Zw3ai6 |
+|--------|---------|-----------------------------------------|-------------------------------------------------------------|
+
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJncmVlbkBncmVlbi5rciIsImlhdCI6MTczNDY1NzQ1NywiZXhwIjoxNzM0NjU4NjU3LCJzaWduZWRVc2VyIjoie1wic2lnbmVkVXNlcklkXCI6MixcInJvbGVzXCI6W1wiUk9MRV9VU0VSXCIsXCJST0xFX0FETUlOXCJdfSJ9.ZYj2hqtHlLoNt9MpXR7SQZeriWLMSNUcDKR2GDZcGBJO1okvnyy1EN4weVQ_xN_aMUR1ix-3HJCPPyoKUqtqsA
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-6] [com.green.greengram.feed.FeedController] FeedController > getFeedList > p : FeedGetReq(super=Paging(page=1, size=20, startIdx=0), signedUserId=0, profileUserId=null)
+[2024-12-20 10:17:37 DEBUGhttp-nio-8080-exec-6] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_id AS feedId
+        , A.contents
+        , A.location
+        , A.created_at AS createdAt
+        , A.writer_user_id AS writerUserId
+        , IF(B.nick_name IS NULL, B.uid, B.nick_name) AS writerNm
+        , B.pic AS writerPic
+        , IF(C.feed_id IS NULL, 0, 1) AS isLike
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_user_id = B.user_id
+        LEFT JOIN feed_like C
+        ON A.feed_id = C.feed_id
+        AND C.user_id = 2
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 20
+ {executed in 0 msec}
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-6] [jdbc.resultsettable] 
+|--------|---------|-----------|--------------------|---------------|---------|-----------------------------------------|-------|
+|feed_id |contents |location   |created_at          |writer_user_id |writernm |pic                                      |islike |
+|--------|---------|-----------|--------------------|---------------|---------|-----------------------------------------|-------|
+|238     |hhh      |hh         |2024-12-19 13:19:21 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|237     |         |           |2024-12-19 13:18:07 |9              |asd      |0cc36dd6-7730-414b-874f-35d7e1b3f138.jpg |0      |
+|236     |d        |d          |2024-12-19 13:16:32 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|234     |배고프다     |죽자그냥       |2024-12-19 11:45:28 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|233     |ㄴㄴㄴㄴ     |ㄴㄴㄴ        |2024-12-11 17:21:38 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|232     |ㅎㅎㅎㅎㅎㅎㅎ  |헤헤헤헤헤      |2024-12-10 10:55:19 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|231     |ffffff   |ffff       |2024-12-10 10:54:13 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|230     |fgfgf    |fff        |2024-12-10 10:53:50 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|229     |zzz      |zzz        |2024-12-10 10:51:07 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|228     |sss      |aaaa       |2024-12-10 10:50:00 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|227     |dgggg    |gd         |2024-12-10 10:49:50 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|226     |ggg      |gg         |2024-12-10 10:49:12 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|222     |zzz      |zz         |2024-12-10 08:56:23 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|217     |ㅋㅋㅋㅋ     |ㅋㅋㅋ        |2024-12-06 09:37:27 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|216     |ㅍㅍㅍㅍ     |ㅍㅍ         |2024-12-06 09:37:14 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|215     |ㅠㅠㅠㅠㅠㅠㅠㅠ |ㅠㅠ         |2024-12-06 09:35:19 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|214     |ㅁㄴㅇㅁㄴㅇ   |ㅁㄴㅇㅁㄴㅇ     |2024-12-06 09:30:38 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|213     |ㅇㅁㄴㅇㅁㄴㅇ  |ㅁㄴㅇㅁㄴㅇㅁㄴㅁㄴ |2024-12-06 09:29:56 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|212     |ㅁㄴㅇ      |헤헤헤헤헤      |2024-12-06 09:26:39 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |1      |
+|211     |제발요      |제발         |2024-12-06 09:23:17 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|--------|---------|-----------|--------------------|---------------|---------|-----------------------------------------|-------|
+
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-6] [com.green.greengram.feed.FeedService] feedIds: [238, 237, 236, 234, 233, 232, 231, 230, 229, 228, 227, 226, 222, 217, 216, 215, 214, 213, 212, 211]
+[2024-12-20 10:17:37 DEBUGhttp-nio-8080-exec-6] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT feed_id AS feedId
+        , pic
+        FROM feed_pic
+        WHERE feed_id in
+         (  
+            238
+         , 
+            237
+         , 
+            236
+         , 
+            234
+         , 
+            233
+         , 
+            232
+         , 
+            231
+         , 
+            230
+         , 
+            229
+         , 
+            228
+         , 
+            227
+         , 
+            226
+         , 
+            222
+         , 
+            217
+         , 
+            216
+         , 
+            215
+         , 
+            214
+         , 
+            213
+         , 
+            212
+         , 
+            211
+         )
+ {executed in 0 msec}
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-6] [jdbc.resultsettable] 
+|--------|-----------------------------------------|
+|feed_id |pic                                      |
+|--------|-----------------------------------------|
+|211     |009a01a9-7cef-4fc5-876c-5ede45dd4fc2.png |
+|212     |b6d90a6f-617f-48f8-b1a5-dfd604eb309b.gif |
+|213     |bfd5c206-a322-4f6c-a0b6-06e2a021ad8a.png |
+|214     |2759dc87-444a-4b89-bc3a-35751aa27fae.png |
+|215     |3496ae2b-1a05-4253-9339-50394d54d245.png |
+|216     |114415da-5b30-4851-9d33-681c52befb08.gif |
+|217     |9ed03755-88f1-4658-a20d-29bb4876b24b.png |
+|217     |e3418cba-faa0-491a-994f-ca87e14a5def.gif |
+|217     |edea2ab7-d8bf-4c25-ad81-a65ac86dbc69.png |
+|222     |f967f878-cd70-4ec4-9acd-089f7b6db5e6.png |
+|226     |dab5b0f5-bf43-4da5-b967-e3cb51bdbb2a.png |
+|227     |2e47d178-ee29-40d6-b1cd-a773e956d19c.gif |
+|228     |4cfffab8-1fe3-42fb-b0e1-fc2fdedaec17.png |
+|229     |e2b79828-fdc6-4015-a3fb-61b3896f861f.png |
+|230     |28732f5d-a8f4-41be-90bd-3028a68fccf4.png |
+|231     |ac2c0af2-7000-4d22-a4e1-57d13ecacf0d.gif |
+|232     |b83e7a6d-91aa-4c89-8f9c-9a241076deb5.png |
+|233     |92898300-a3e2-4554-9532-4278613bbaa2.png |
+|234     |d0a1badc-8c31-470d-9fbf-23d3e0f77cba.png |
+|234     |fc1919a9-2952-4efe-b1ca-443a0e6c6332.png |
+|236     |fa2ac4dd-de17-40f1-8fab-637970a6782b.gif |
+|237     |15c1385b-fd78-4bd7-bb79-d9cdd54ea206.gif |
+|238     |62e9156e-f2b7-45da-983c-91bf2db56e93.png |
+|--------|-----------------------------------------|
+
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-6] [com.green.greengram.feed.FeedService] feedPicList: [com.green.greengram.feed.model.FeedPicSel@3a4a13d0, com.green.greengram.feed.model.FeedPicSel@1deef2ce, com.green.greengram.feed.model.FeedPicSel@4a64c934, com.green.greengram.feed.model.FeedPicSel@7e1e6772, com.green.greengram.feed.model.FeedPicSel@14203ff2, com.green.greengram.feed.model.FeedPicSel@7eb2c73a, com.green.greengram.feed.model.FeedPicSel@12739cb1, com.green.greengram.feed.model.FeedPicSel@1f5b4c7a, com.green.greengram.feed.model.FeedPicSel@a913fcc, com.green.greengram.feed.model.FeedPicSel@6272a2b3, com.green.greengram.feed.model.FeedPicSel@6c6a2c58, com.green.greengram.feed.model.FeedPicSel@29979533, com.green.greengram.feed.model.FeedPicSel@2a7ba092, com.green.greengram.feed.model.FeedPicSel@5debe854, com.green.greengram.feed.model.FeedPicSel@605e075d, com.green.greengram.feed.model.FeedPicSel@75f52868, com.green.greengram.feed.model.FeedPicSel@2fd6974, com.green.greengram.feed.model.FeedPicSel@568837, com.green.greengram.feed.model.FeedPicSel@1022038f, com.green.greengram.feed.model.FeedPicSel@4c48df8b, com.green.greengram.feed.model.FeedPicSel@2517b9bf, com.green.greengram.feed.model.FeedPicSel@11b49a1a, com.green.greengram.feed.model.FeedPicSel@118acdd8]
+[2024-12-20 10:17:37 DEBUGhttp-nio-8080-exec-6] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT
+        A.feed_id AS feedId,
+        A.feed_comment_id AS feedCommentId,
+        A.comment,
+        U.user_id AS writerUserId,
+        IF(U.nick_name IS NULL, U.uid, U.nick_name) AS writerName,
+        U.pic AS writerPic
+        FROM feed_comment A
+        LEFT JOIN user U ON A.user_id = U.user_id
+         WHERE A.feed_id IN
+                (
+                    238
+                ,
+                    237
+                ,
+                    236
+                ,
+                    234
+                ,
+                    233
+                ,
+                    232
+                ,
+                    231
+                ,
+                    230
+                ,
+                    229
+                ,
+                    228
+                ,
+                    227
+                ,
+                    226
+                ,
+                    222
+                ,
+                    217
+                ,
+                    216
+                ,
+                    215
+                ,
+                    214
+                ,
+                    213
+                ,
+                    212
+                ,
+                    211
+                ) 
+        AND (
+        SELECT COUNT(*)
+        FROM feed_comment C
+        WHERE C.feed_id = A.feed_id
+        AND C.feed_comment_id  <  A.feed_comment_id
+        )  <  4
+        ORDER BY A.feed_id DESC, A.feed_comment_id DESC
+ {executed in 1 msec}
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-6] [jdbc.resultsettable] 
+|--------|----------------|------------|--------|-----------|-----------------------------------------|
+|feed_id |feed_comment_id |comment     |user_id |writername |pic                                      |
+|--------|----------------|------------|--------|-----------|-----------------------------------------|
+|238     |90              |asdasdsad   |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|238     |88              |asasd       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|238     |85              |asdasdasd   |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|238     |84              |asdasd      |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|236     |83              |sss         |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |68              |ㄱㄱㄱㄱㄱ       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |65              |dddd        |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |62              |ㄹㄹㄹㄹ        |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |61              |ㄹㄹㄹㄹㄹ       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|228     |77              |ㅇㅇㅇㅇㅇ       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|222     |67              |dddd        |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|217     |51              |ㅇㅇㅇㅇㅇ       |33      |ㅜㅜ         |a6ace6db-926a-4045-a622-a28541e39ce3.png |
+|215     |63              |진짜 변태같이 그렸다 |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|212     |72              |ㅌㅌㅌ         |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|211     |41              |ㅋㅋㅋㅋ        |33      |ㅜㅜ         |a6ace6db-926a-4045-a622-a28541e39ce3.png |
+|211     |40              |ㅋㅋㅋㅋ        |33      |ㅜㅜ         |a6ace6db-926a-4045-a622-a28541e39ce3.png |
+|--------|----------------|------------|--------|-----------|-----------------------------------------|
+
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-6] [com.green.greengram.feed.FeedService] list: [FeedGetRes(feedId=238, contents=hhh, location=hh, createdAt=2024-12-19 13:19:21, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[62e9156e-f2b7-45da-983c-91bf2db56e93.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@49f8c4bc), FeedGetRes(feedId=237, contents=, location=, createdAt=2024-12-19 13:18:07, writerUserId=9, writerNm=asd, writerPic=0cc36dd6-7730-414b-874f-35d7e1b3f138.jpg, isLike=0, pics=[15c1385b-fd78-4bd7-bb79-d9cdd54ea206.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@14154d90), FeedGetRes(feedId=236, contents=d, location=d, createdAt=2024-12-19 13:16:32, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[fa2ac4dd-de17-40f1-8fab-637970a6782b.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@41ac530f), FeedGetRes(feedId=234, contents=배고프다, location=죽자그냥, createdAt=2024-12-19 11:45:28, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[d0a1badc-8c31-470d-9fbf-23d3e0f77cba.png, fc1919a9-2952-4efe-b1ca-443a0e6c6332.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@302a1740), FeedGetRes(feedId=233, contents=ㄴㄴㄴㄴ, location=ㄴㄴㄴ, createdAt=2024-12-11 17:21:38, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[92898300-a3e2-4554-9532-4278613bbaa2.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@3f78f8dd), FeedGetRes(feedId=232, contents=ㅎㅎㅎㅎㅎㅎㅎ, location=헤헤헤헤헤, createdAt=2024-12-10 10:55:19, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[b83e7a6d-91aa-4c89-8f9c-9a241076deb5.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@1bf4b6f), FeedGetRes(feedId=231, contents=ffffff, location=ffff, createdAt=2024-12-10 10:54:13, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[ac2c0af2-7000-4d22-a4e1-57d13ecacf0d.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@2228447c), FeedGetRes(feedId=230, contents=fgfgf, location=fff, createdAt=2024-12-10 10:53:50, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[28732f5d-a8f4-41be-90bd-3028a68fccf4.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@4258c76e), FeedGetRes(feedId=229, contents=zzz, location=zzz, createdAt=2024-12-10 10:51:07, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[e2b79828-fdc6-4015-a3fb-61b3896f861f.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@3a1e71e8), FeedGetRes(feedId=228, contents=sss, location=aaaa, createdAt=2024-12-10 10:50:00, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[4cfffab8-1fe3-42fb-b0e1-fc2fdedaec17.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@4181a1f7), FeedGetRes(feedId=227, contents=dgggg, location=gd, createdAt=2024-12-10 10:49:50, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[2e47d178-ee29-40d6-b1cd-a773e956d19c.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@21ea061f), FeedGetRes(feedId=226, contents=ggg, location=gg, createdAt=2024-12-10 10:49:12, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[dab5b0f5-bf43-4da5-b967-e3cb51bdbb2a.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@258dd6fb), FeedGetRes(feedId=222, contents=zzz, location=zz, createdAt=2024-12-10 08:56:23, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[f967f878-cd70-4ec4-9acd-089f7b6db5e6.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@6cd57293), FeedGetRes(feedId=217, contents=ㅋㅋㅋㅋ, location=ㅋㅋㅋ, createdAt=2024-12-06 09:37:27, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[9ed03755-88f1-4658-a20d-29bb4876b24b.png, e3418cba-faa0-491a-994f-ca87e14a5def.gif, edea2ab7-d8bf-4c25-ad81-a65ac86dbc69.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@2017f8e7), FeedGetRes(feedId=216, contents=ㅍㅍㅍㅍ, location=ㅍㅍ, createdAt=2024-12-06 09:37:14, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[114415da-5b30-4851-9d33-681c52befb08.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@51bcc804), FeedGetRes(feedId=215, contents=ㅠㅠㅠㅠㅠㅠㅠㅠ, location=ㅠㅠ, createdAt=2024-12-06 09:35:19, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[3496ae2b-1a05-4253-9339-50394d54d245.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@1acde6c6), FeedGetRes(feedId=214, contents=ㅁㄴㅇㅁㄴㅇ, location=ㅁㄴㅇㅁㄴㅇ, createdAt=2024-12-06 09:30:38, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[2759dc87-444a-4b89-bc3a-35751aa27fae.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@5dcb5ee6), FeedGetRes(feedId=213, contents=ㅇㅁㄴㅇㅁㄴㅇ, location=ㅁㄴㅇㅁㄴㅇㅁㄴㅁㄴ, createdAt=2024-12-06 09:29:56, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[bfd5c206-a322-4f6c-a0b6-06e2a021ad8a.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@42045578), FeedGetRes(feedId=212, contents=ㅁㄴㅇ, location=헤헤헤헤헤, createdAt=2024-12-06 09:26:39, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=1, pics=[b6d90a6f-617f-48f8-b1a5-dfd604eb309b.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@75cf59d4), FeedGetRes(feedId=211, contents=제발요, location=제발, createdAt=2024-12-06 09:23:17, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[009a01a9-7cef-4fc5-876c-5ede45dd4fc2.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@c16a7d)]
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:37 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJncmVlbkBncmVlbi5rciIsImlhdCI6MTczNDY1NzQ1NywiZXhwIjoxNzM0NjU4NjU3LCJzaWduZWRVc2VyIjoie1wic2lnbmVkVXNlcklkXCI6MixcInJvbGVzXCI6W1wiUk9MRV9VU0VSXCIsXCJST0xFX0FETUlOXCJdfSJ9.ZYj2hqtHlLoNt9MpXR7SQZeriWLMSNUcDKR2GDZcGBJO1okvnyy1EN4weVQ_xN_aMUR1ix-3HJCPPyoKUqtqsA
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [com.green.greengram.feed.FeedController] FeedController > getFeedList > p : FeedGetReq(super=Paging(page=1, size=20, startIdx=0), signedUserId=0, profileUserId=null)
+[2024-12-20 10:17:41 DEBUGhttp-nio-8080-exec-10] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_id AS feedId
+        , A.contents
+        , A.location
+        , A.created_at AS createdAt
+        , A.writer_user_id AS writerUserId
+        , IF(B.nick_name IS NULL, B.uid, B.nick_name) AS writerNm
+        , B.pic AS writerPic
+        , IF(C.feed_id IS NULL, 0, 1) AS isLike
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_user_id = B.user_id
+        LEFT JOIN feed_like C
+        ON A.feed_id = C.feed_id
+        AND C.user_id = 2
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 20
+ {executed in 0 msec}
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [jdbc.resultsettable] 
+|--------|---------|-----------|--------------------|---------------|---------|-----------------------------------------|-------|
+|feed_id |contents |location   |created_at          |writer_user_id |writernm |pic                                      |islike |
+|--------|---------|-----------|--------------------|---------------|---------|-----------------------------------------|-------|
+|238     |hhh      |hh         |2024-12-19 13:19:21 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|237     |         |           |2024-12-19 13:18:07 |9              |asd      |0cc36dd6-7730-414b-874f-35d7e1b3f138.jpg |0      |
+|236     |d        |d          |2024-12-19 13:16:32 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|234     |배고프다     |죽자그냥       |2024-12-19 11:45:28 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|233     |ㄴㄴㄴㄴ     |ㄴㄴㄴ        |2024-12-11 17:21:38 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|232     |ㅎㅎㅎㅎㅎㅎㅎ  |헤헤헤헤헤      |2024-12-10 10:55:19 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|231     |ffffff   |ffff       |2024-12-10 10:54:13 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|230     |fgfgf    |fff        |2024-12-10 10:53:50 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|229     |zzz      |zzz        |2024-12-10 10:51:07 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|228     |sss      |aaaa       |2024-12-10 10:50:00 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|227     |dgggg    |gd         |2024-12-10 10:49:50 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|226     |ggg      |gg         |2024-12-10 10:49:12 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|222     |zzz      |zz         |2024-12-10 08:56:23 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|217     |ㅋㅋㅋㅋ     |ㅋㅋㅋ        |2024-12-06 09:37:27 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|216     |ㅍㅍㅍㅍ     |ㅍㅍ         |2024-12-06 09:37:14 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|215     |ㅠㅠㅠㅠㅠㅠㅠㅠ |ㅠㅠ         |2024-12-06 09:35:19 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|214     |ㅁㄴㅇㅁㄴㅇ   |ㅁㄴㅇㅁㄴㅇ     |2024-12-06 09:30:38 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|213     |ㅇㅁㄴㅇㅁㄴㅇ  |ㅁㄴㅇㅁㄴㅇㅁㄴㅁㄴ |2024-12-06 09:29:56 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|212     |ㅁㄴㅇ      |헤헤헤헤헤      |2024-12-06 09:26:39 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |1      |
+|211     |제발요      |제발         |2024-12-06 09:23:17 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|--------|---------|-----------|--------------------|---------------|---------|-----------------------------------------|-------|
+
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [com.green.greengram.feed.FeedService] feedIds: [238, 237, 236, 234, 233, 232, 231, 230, 229, 228, 227, 226, 222, 217, 216, 215, 214, 213, 212, 211]
+[2024-12-20 10:17:41 DEBUGhttp-nio-8080-exec-10] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT feed_id AS feedId
+        , pic
+        FROM feed_pic
+        WHERE feed_id in
+         (  
+            238
+         , 
+            237
+         , 
+            236
+         , 
+            234
+         , 
+            233
+         , 
+            232
+         , 
+            231
+         , 
+            230
+         , 
+            229
+         , 
+            228
+         , 
+            227
+         , 
+            226
+         , 
+            222
+         , 
+            217
+         , 
+            216
+         , 
+            215
+         , 
+            214
+         , 
+            213
+         , 
+            212
+         , 
+            211
+         )
+ {executed in 0 msec}
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [jdbc.resultsettable] 
+|--------|-----------------------------------------|
+|feed_id |pic                                      |
+|--------|-----------------------------------------|
+|211     |009a01a9-7cef-4fc5-876c-5ede45dd4fc2.png |
+|212     |b6d90a6f-617f-48f8-b1a5-dfd604eb309b.gif |
+|213     |bfd5c206-a322-4f6c-a0b6-06e2a021ad8a.png |
+|214     |2759dc87-444a-4b89-bc3a-35751aa27fae.png |
+|215     |3496ae2b-1a05-4253-9339-50394d54d245.png |
+|216     |114415da-5b30-4851-9d33-681c52befb08.gif |
+|217     |9ed03755-88f1-4658-a20d-29bb4876b24b.png |
+|217     |e3418cba-faa0-491a-994f-ca87e14a5def.gif |
+|217     |edea2ab7-d8bf-4c25-ad81-a65ac86dbc69.png |
+|222     |f967f878-cd70-4ec4-9acd-089f7b6db5e6.png |
+|226     |dab5b0f5-bf43-4da5-b967-e3cb51bdbb2a.png |
+|227     |2e47d178-ee29-40d6-b1cd-a773e956d19c.gif |
+|228     |4cfffab8-1fe3-42fb-b0e1-fc2fdedaec17.png |
+|229     |e2b79828-fdc6-4015-a3fb-61b3896f861f.png |
+|230     |28732f5d-a8f4-41be-90bd-3028a68fccf4.png |
+|231     |ac2c0af2-7000-4d22-a4e1-57d13ecacf0d.gif |
+|232     |b83e7a6d-91aa-4c89-8f9c-9a241076deb5.png |
+|233     |92898300-a3e2-4554-9532-4278613bbaa2.png |
+|234     |d0a1badc-8c31-470d-9fbf-23d3e0f77cba.png |
+|234     |fc1919a9-2952-4efe-b1ca-443a0e6c6332.png |
+|236     |fa2ac4dd-de17-40f1-8fab-637970a6782b.gif |
+|237     |15c1385b-fd78-4bd7-bb79-d9cdd54ea206.gif |
+|238     |62e9156e-f2b7-45da-983c-91bf2db56e93.png |
+|--------|-----------------------------------------|
+
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [com.green.greengram.feed.FeedService] feedPicList: [com.green.greengram.feed.model.FeedPicSel@45209af9, com.green.greengram.feed.model.FeedPicSel@28daeeb4, com.green.greengram.feed.model.FeedPicSel@3d74cac8, com.green.greengram.feed.model.FeedPicSel@47c60fc0, com.green.greengram.feed.model.FeedPicSel@670a293, com.green.greengram.feed.model.FeedPicSel@79a043a7, com.green.greengram.feed.model.FeedPicSel@6219e4d1, com.green.greengram.feed.model.FeedPicSel@15d64f5d, com.green.greengram.feed.model.FeedPicSel@1631034e, com.green.greengram.feed.model.FeedPicSel@6df7c754, com.green.greengram.feed.model.FeedPicSel@40e59957, com.green.greengram.feed.model.FeedPicSel@676e9ab1, com.green.greengram.feed.model.FeedPicSel@79dbce61, com.green.greengram.feed.model.FeedPicSel@2ac57b69, com.green.greengram.feed.model.FeedPicSel@46867047, com.green.greengram.feed.model.FeedPicSel@552ed134, com.green.greengram.feed.model.FeedPicSel@72a1b536, com.green.greengram.feed.model.FeedPicSel@73be9638, com.green.greengram.feed.model.FeedPicSel@6cfd440, com.green.greengram.feed.model.FeedPicSel@254b02dc, com.green.greengram.feed.model.FeedPicSel@5a3c0b46, com.green.greengram.feed.model.FeedPicSel@5db4596f, com.green.greengram.feed.model.FeedPicSel@25a1fb4d]
+[2024-12-20 10:17:41 DEBUGhttp-nio-8080-exec-10] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT
+        A.feed_id AS feedId,
+        A.feed_comment_id AS feedCommentId,
+        A.comment,
+        U.user_id AS writerUserId,
+        IF(U.nick_name IS NULL, U.uid, U.nick_name) AS writerName,
+        U.pic AS writerPic
+        FROM feed_comment A
+        LEFT JOIN user U ON A.user_id = U.user_id
+         WHERE A.feed_id IN
+                (
+                    238
+                ,
+                    237
+                ,
+                    236
+                ,
+                    234
+                ,
+                    233
+                ,
+                    232
+                ,
+                    231
+                ,
+                    230
+                ,
+                    229
+                ,
+                    228
+                ,
+                    227
+                ,
+                    226
+                ,
+                    222
+                ,
+                    217
+                ,
+                    216
+                ,
+                    215
+                ,
+                    214
+                ,
+                    213
+                ,
+                    212
+                ,
+                    211
+                ) 
+        AND (
+        SELECT COUNT(*)
+        FROM feed_comment C
+        WHERE C.feed_id = A.feed_id
+        AND C.feed_comment_id  <  A.feed_comment_id
+        )  <  4
+        ORDER BY A.feed_id DESC, A.feed_comment_id DESC
+ {executed in 1 msec}
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [jdbc.resultsettable] 
+|--------|----------------|------------|--------|-----------|-----------------------------------------|
+|feed_id |feed_comment_id |comment     |user_id |writername |pic                                      |
+|--------|----------------|------------|--------|-----------|-----------------------------------------|
+|238     |90              |asdasdsad   |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|238     |88              |asasd       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|238     |85              |asdasdasd   |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|238     |84              |asdasd      |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|236     |83              |sss         |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |68              |ㄱㄱㄱㄱㄱ       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |65              |dddd        |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |62              |ㄹㄹㄹㄹ        |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |61              |ㄹㄹㄹㄹㄹ       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|228     |77              |ㅇㅇㅇㅇㅇ       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|222     |67              |dddd        |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|217     |51              |ㅇㅇㅇㅇㅇ       |33      |ㅜㅜ         |a6ace6db-926a-4045-a622-a28541e39ce3.png |
+|215     |63              |진짜 변태같이 그렸다 |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|212     |72              |ㅌㅌㅌ         |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|211     |41              |ㅋㅋㅋㅋ        |33      |ㅜㅜ         |a6ace6db-926a-4045-a622-a28541e39ce3.png |
+|211     |40              |ㅋㅋㅋㅋ        |33      |ㅜㅜ         |a6ace6db-926a-4045-a622-a28541e39ce3.png |
+|--------|----------------|------------|--------|-----------|-----------------------------------------|
+
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [com.green.greengram.feed.FeedService] list: [FeedGetRes(feedId=238, contents=hhh, location=hh, createdAt=2024-12-19 13:19:21, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[62e9156e-f2b7-45da-983c-91bf2db56e93.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@6559d684), FeedGetRes(feedId=237, contents=, location=, createdAt=2024-12-19 13:18:07, writerUserId=9, writerNm=asd, writerPic=0cc36dd6-7730-414b-874f-35d7e1b3f138.jpg, isLike=0, pics=[15c1385b-fd78-4bd7-bb79-d9cdd54ea206.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@6f3b74c3), FeedGetRes(feedId=236, contents=d, location=d, createdAt=2024-12-19 13:16:32, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[fa2ac4dd-de17-40f1-8fab-637970a6782b.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@18b42db7), FeedGetRes(feedId=234, contents=배고프다, location=죽자그냥, createdAt=2024-12-19 11:45:28, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[d0a1badc-8c31-470d-9fbf-23d3e0f77cba.png, fc1919a9-2952-4efe-b1ca-443a0e6c6332.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@4a94a304), FeedGetRes(feedId=233, contents=ㄴㄴㄴㄴ, location=ㄴㄴㄴ, createdAt=2024-12-11 17:21:38, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[92898300-a3e2-4554-9532-4278613bbaa2.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@61d2a124), FeedGetRes(feedId=232, contents=ㅎㅎㅎㅎㅎㅎㅎ, location=헤헤헤헤헤, createdAt=2024-12-10 10:55:19, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[b83e7a6d-91aa-4c89-8f9c-9a241076deb5.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@557b5cb1), FeedGetRes(feedId=231, contents=ffffff, location=ffff, createdAt=2024-12-10 10:54:13, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[ac2c0af2-7000-4d22-a4e1-57d13ecacf0d.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@6c1b1a3c), FeedGetRes(feedId=230, contents=fgfgf, location=fff, createdAt=2024-12-10 10:53:50, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[28732f5d-a8f4-41be-90bd-3028a68fccf4.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@3f80838), FeedGetRes(feedId=229, contents=zzz, location=zzz, createdAt=2024-12-10 10:51:07, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[e2b79828-fdc6-4015-a3fb-61b3896f861f.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@77d742e2), FeedGetRes(feedId=228, contents=sss, location=aaaa, createdAt=2024-12-10 10:50:00, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[4cfffab8-1fe3-42fb-b0e1-fc2fdedaec17.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@78c6067d), FeedGetRes(feedId=227, contents=dgggg, location=gd, createdAt=2024-12-10 10:49:50, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[2e47d178-ee29-40d6-b1cd-a773e956d19c.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@4c3829a3), FeedGetRes(feedId=226, contents=ggg, location=gg, createdAt=2024-12-10 10:49:12, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[dab5b0f5-bf43-4da5-b967-e3cb51bdbb2a.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@fc241d4), FeedGetRes(feedId=222, contents=zzz, location=zz, createdAt=2024-12-10 08:56:23, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[f967f878-cd70-4ec4-9acd-089f7b6db5e6.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@42cfc29c), FeedGetRes(feedId=217, contents=ㅋㅋㅋㅋ, location=ㅋㅋㅋ, createdAt=2024-12-06 09:37:27, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[9ed03755-88f1-4658-a20d-29bb4876b24b.png, e3418cba-faa0-491a-994f-ca87e14a5def.gif, edea2ab7-d8bf-4c25-ad81-a65ac86dbc69.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@af2d156), FeedGetRes(feedId=216, contents=ㅍㅍㅍㅍ, location=ㅍㅍ, createdAt=2024-12-06 09:37:14, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[114415da-5b30-4851-9d33-681c52befb08.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@78a849a), FeedGetRes(feedId=215, contents=ㅠㅠㅠㅠㅠㅠㅠㅠ, location=ㅠㅠ, createdAt=2024-12-06 09:35:19, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[3496ae2b-1a05-4253-9339-50394d54d245.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@1adbb95e), FeedGetRes(feedId=214, contents=ㅁㄴㅇㅁㄴㅇ, location=ㅁㄴㅇㅁㄴㅇ, createdAt=2024-12-06 09:30:38, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[2759dc87-444a-4b89-bc3a-35751aa27fae.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@263c43bb), FeedGetRes(feedId=213, contents=ㅇㅁㄴㅇㅁㄴㅇ, location=ㅁㄴㅇㅁㄴㅇㅁㄴㅁㄴ, createdAt=2024-12-06 09:29:56, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[bfd5c206-a322-4f6c-a0b6-06e2a021ad8a.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@3a585e4b), FeedGetRes(feedId=212, contents=ㅁㄴㅇ, location=헤헤헤헤헤, createdAt=2024-12-06 09:26:39, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=1, pics=[b6d90a6f-617f-48f8-b1a5-dfd604eb309b.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@6925a3ce), FeedGetRes(feedId=211, contents=제발요, location=제발, createdAt=2024-12-06 09:23:17, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[009a01a9-7cef-4fc5-876c-5ede45dd4fc2.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@2ef3e6fd)]
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJncmVlbkBncmVlbi5rciIsImlhdCI6MTczNDY1NzQ1NywiZXhwIjoxNzM0NjU4NjU3LCJzaWduZWRVc2VyIjoie1wic2lnbmVkVXNlcklkXCI6MixcInJvbGVzXCI6W1wiUk9MRV9VU0VSXCIsXCJST0xFX0FETUlOXCJdfSJ9.ZYj2hqtHlLoNt9MpXR7SQZeriWLMSNUcDKR2GDZcGBJO1okvnyy1EN4weVQ_xN_aMUR1ix-3HJCPPyoKUqtqsA
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [com.green.greengram.feed.FeedController] FeedController > getFeedList > p : FeedGetReq(super=Paging(page=1, size=20, startIdx=0), signedUserId=0, profileUserId=null)
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 DEBUGhttp-nio-8080-exec-9] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_id AS feedId
+        , A.contents
+        , A.location
+        , A.created_at AS createdAt
+        , A.writer_user_id AS writerUserId
+        , IF(B.nick_name IS NULL, B.uid, B.nick_name) AS writerNm
+        , B.pic AS writerPic
+        , IF(C.feed_id IS NULL, 0, 1) AS isLike
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_user_id = B.user_id
+        LEFT JOIN feed_like C
+        ON A.feed_id = C.feed_id
+        AND C.user_id = 2
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 20
+ {executed in 1 msec}
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [jdbc.resultsettable] 
+|--------|---------|-----------|--------------------|---------------|---------|-----------------------------------------|-------|
+|feed_id |contents |location   |created_at          |writer_user_id |writernm |pic                                      |islike |
+|--------|---------|-----------|--------------------|---------------|---------|-----------------------------------------|-------|
+|238     |hhh      |hh         |2024-12-19 13:19:21 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|237     |         |           |2024-12-19 13:18:07 |9              |asd      |0cc36dd6-7730-414b-874f-35d7e1b3f138.jpg |0      |
+|236     |d        |d          |2024-12-19 13:16:32 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|234     |배고프다     |죽자그냥       |2024-12-19 11:45:28 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|233     |ㄴㄴㄴㄴ     |ㄴㄴㄴ        |2024-12-11 17:21:38 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|232     |ㅎㅎㅎㅎㅎㅎㅎ  |헤헤헤헤헤      |2024-12-10 10:55:19 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|231     |ffffff   |ffff       |2024-12-10 10:54:13 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|230     |fgfgf    |fff        |2024-12-10 10:53:50 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|229     |zzz      |zzz        |2024-12-10 10:51:07 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|228     |sss      |aaaa       |2024-12-10 10:50:00 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|227     |dgggg    |gd         |2024-12-10 10:49:50 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|226     |ggg      |gg         |2024-12-10 10:49:12 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|222     |zzz      |zz         |2024-12-10 08:56:23 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|217     |ㅋㅋㅋㅋ     |ㅋㅋㅋ        |2024-12-06 09:37:27 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|216     |ㅍㅍㅍㅍ     |ㅍㅍ         |2024-12-06 09:37:14 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|215     |ㅠㅠㅠㅠㅠㅠㅠㅠ |ㅠㅠ         |2024-12-06 09:35:19 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|214     |ㅁㄴㅇㅁㄴㅇ   |ㅁㄴㅇㅁㄴㅇ     |2024-12-06 09:30:38 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|213     |ㅇㅁㄴㅇㅁㄴㅇ  |ㅁㄴㅇㅁㄴㅇㅁㄴㅁㄴ |2024-12-06 09:29:56 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|212     |ㅁㄴㅇ      |헤헤헤헤헤      |2024-12-06 09:26:39 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |1      |
+|211     |제발요      |제발         |2024-12-06 09:23:17 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|--------|---------|-----------|--------------------|---------------|---------|-----------------------------------------|-------|
+
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [com.green.greengram.feed.FeedService] feedIds: [238, 237, 236, 234, 233, 232, 231, 230, 229, 228, 227, 226, 222, 217, 216, 215, 214, 213, 212, 211]
+[2024-12-20 10:17:41 DEBUGhttp-nio-8080-exec-9] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT feed_id AS feedId
+        , pic
+        FROM feed_pic
+        WHERE feed_id in
+         (  
+            238
+         , 
+            237
+         , 
+            236
+         , 
+            234
+         , 
+            233
+         , 
+            232
+         , 
+            231
+         , 
+            230
+         , 
+            229
+         , 
+            228
+         , 
+            227
+         , 
+            226
+         , 
+            222
+         , 
+            217
+         , 
+            216
+         , 
+            215
+         , 
+            214
+         , 
+            213
+         , 
+            212
+         , 
+            211
+         )
+ {executed in 2 msec}
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [jdbc.resultsettable] 
+|--------|-----------------------------------------|
+|feed_id |pic                                      |
+|--------|-----------------------------------------|
+|211     |009a01a9-7cef-4fc5-876c-5ede45dd4fc2.png |
+|212     |b6d90a6f-617f-48f8-b1a5-dfd604eb309b.gif |
+|213     |bfd5c206-a322-4f6c-a0b6-06e2a021ad8a.png |
+|214     |2759dc87-444a-4b89-bc3a-35751aa27fae.png |
+|215     |3496ae2b-1a05-4253-9339-50394d54d245.png |
+|216     |114415da-5b30-4851-9d33-681c52befb08.gif |
+|217     |9ed03755-88f1-4658-a20d-29bb4876b24b.png |
+|217     |e3418cba-faa0-491a-994f-ca87e14a5def.gif |
+|217     |edea2ab7-d8bf-4c25-ad81-a65ac86dbc69.png |
+|222     |f967f878-cd70-4ec4-9acd-089f7b6db5e6.png |
+|226     |dab5b0f5-bf43-4da5-b967-e3cb51bdbb2a.png |
+|227     |2e47d178-ee29-40d6-b1cd-a773e956d19c.gif |
+|228     |4cfffab8-1fe3-42fb-b0e1-fc2fdedaec17.png |
+|229     |e2b79828-fdc6-4015-a3fb-61b3896f861f.png |
+|230     |28732f5d-a8f4-41be-90bd-3028a68fccf4.png |
+|231     |ac2c0af2-7000-4d22-a4e1-57d13ecacf0d.gif |
+|232     |b83e7a6d-91aa-4c89-8f9c-9a241076deb5.png |
+|233     |92898300-a3e2-4554-9532-4278613bbaa2.png |
+|234     |d0a1badc-8c31-470d-9fbf-23d3e0f77cba.png |
+|234     |fc1919a9-2952-4efe-b1ca-443a0e6c6332.png |
+|236     |fa2ac4dd-de17-40f1-8fab-637970a6782b.gif |
+|237     |15c1385b-fd78-4bd7-bb79-d9cdd54ea206.gif |
+|238     |62e9156e-f2b7-45da-983c-91bf2db56e93.png |
+|--------|-----------------------------------------|
+
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [com.green.greengram.feed.FeedService] feedPicList: [com.green.greengram.feed.model.FeedPicSel@89002b1, com.green.greengram.feed.model.FeedPicSel@285a4f6d, com.green.greengram.feed.model.FeedPicSel@3500acf1, com.green.greengram.feed.model.FeedPicSel@191e8ceb, com.green.greengram.feed.model.FeedPicSel@111380f3, com.green.greengram.feed.model.FeedPicSel@6b48949b, com.green.greengram.feed.model.FeedPicSel@5b9fca27, com.green.greengram.feed.model.FeedPicSel@360b6c6b, com.green.greengram.feed.model.FeedPicSel@3b127641, com.green.greengram.feed.model.FeedPicSel@1451c1f4, com.green.greengram.feed.model.FeedPicSel@313affab, com.green.greengram.feed.model.FeedPicSel@5cbfb5d3, com.green.greengram.feed.model.FeedPicSel@7437607b, com.green.greengram.feed.model.FeedPicSel@6ef35168, com.green.greengram.feed.model.FeedPicSel@8522cba, com.green.greengram.feed.model.FeedPicSel@29e2014e, com.green.greengram.feed.model.FeedPicSel@661988b1, com.green.greengram.feed.model.FeedPicSel@1215fd0b, com.green.greengram.feed.model.FeedPicSel@b3b240f, com.green.greengram.feed.model.FeedPicSel@32eaac57, com.green.greengram.feed.model.FeedPicSel@189ce6bb, com.green.greengram.feed.model.FeedPicSel@255cad06, com.green.greengram.feed.model.FeedPicSel@7715fefe]
+[2024-12-20 10:17:41 DEBUGhttp-nio-8080-exec-9] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT
+        A.feed_id AS feedId,
+        A.feed_comment_id AS feedCommentId,
+        A.comment,
+        U.user_id AS writerUserId,
+        IF(U.nick_name IS NULL, U.uid, U.nick_name) AS writerName,
+        U.pic AS writerPic
+        FROM feed_comment A
+        LEFT JOIN user U ON A.user_id = U.user_id
+         WHERE A.feed_id IN
+                (
+                    238
+                ,
+                    237
+                ,
+                    236
+                ,
+                    234
+                ,
+                    233
+                ,
+                    232
+                ,
+                    231
+                ,
+                    230
+                ,
+                    229
+                ,
+                    228
+                ,
+                    227
+                ,
+                    226
+                ,
+                    222
+                ,
+                    217
+                ,
+                    216
+                ,
+                    215
+                ,
+                    214
+                ,
+                    213
+                ,
+                    212
+                ,
+                    211
+                ) 
+        AND (
+        SELECT COUNT(*)
+        FROM feed_comment C
+        WHERE C.feed_id = A.feed_id
+        AND C.feed_comment_id  <  A.feed_comment_id
+        )  <  4
+        ORDER BY A.feed_id DESC, A.feed_comment_id DESC
+ {executed in 2 msec}
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [jdbc.resultsettable] 
+|--------|----------------|------------|--------|-----------|-----------------------------------------|
+|feed_id |feed_comment_id |comment     |user_id |writername |pic                                      |
+|--------|----------------|------------|--------|-----------|-----------------------------------------|
+|238     |90              |asdasdsad   |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|238     |88              |asasd       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|238     |85              |asdasdasd   |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|238     |84              |asdasd      |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|236     |83              |sss         |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |68              |ㄱㄱㄱㄱㄱ       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |65              |dddd        |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |62              |ㄹㄹㄹㄹ        |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |61              |ㄹㄹㄹㄹㄹ       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|228     |77              |ㅇㅇㅇㅇㅇ       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|222     |67              |dddd        |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|217     |51              |ㅇㅇㅇㅇㅇ       |33      |ㅜㅜ         |a6ace6db-926a-4045-a622-a28541e39ce3.png |
+|215     |63              |진짜 변태같이 그렸다 |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|212     |72              |ㅌㅌㅌ         |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|211     |41              |ㅋㅋㅋㅋ        |33      |ㅜㅜ         |a6ace6db-926a-4045-a622-a28541e39ce3.png |
+|211     |40              |ㅋㅋㅋㅋ        |33      |ㅜㅜ         |a6ace6db-926a-4045-a622-a28541e39ce3.png |
+|--------|----------------|------------|--------|-----------|-----------------------------------------|
+
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [com.green.greengram.feed.FeedService] list: [FeedGetRes(feedId=238, contents=hhh, location=hh, createdAt=2024-12-19 13:19:21, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[62e9156e-f2b7-45da-983c-91bf2db56e93.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@3439b687), FeedGetRes(feedId=237, contents=, location=, createdAt=2024-12-19 13:18:07, writerUserId=9, writerNm=asd, writerPic=0cc36dd6-7730-414b-874f-35d7e1b3f138.jpg, isLike=0, pics=[15c1385b-fd78-4bd7-bb79-d9cdd54ea206.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@3cd30394), FeedGetRes(feedId=236, contents=d, location=d, createdAt=2024-12-19 13:16:32, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[fa2ac4dd-de17-40f1-8fab-637970a6782b.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@518b3420), FeedGetRes(feedId=234, contents=배고프다, location=죽자그냥, createdAt=2024-12-19 11:45:28, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[d0a1badc-8c31-470d-9fbf-23d3e0f77cba.png, fc1919a9-2952-4efe-b1ca-443a0e6c6332.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@33ae5d85), FeedGetRes(feedId=233, contents=ㄴㄴㄴㄴ, location=ㄴㄴㄴ, createdAt=2024-12-11 17:21:38, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[92898300-a3e2-4554-9532-4278613bbaa2.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@4a5a58f9), FeedGetRes(feedId=232, contents=ㅎㅎㅎㅎㅎㅎㅎ, location=헤헤헤헤헤, createdAt=2024-12-10 10:55:19, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[b83e7a6d-91aa-4c89-8f9c-9a241076deb5.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@6eb13d85), FeedGetRes(feedId=231, contents=ffffff, location=ffff, createdAt=2024-12-10 10:54:13, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[ac2c0af2-7000-4d22-a4e1-57d13ecacf0d.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@66932e47), FeedGetRes(feedId=230, contents=fgfgf, location=fff, createdAt=2024-12-10 10:53:50, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[28732f5d-a8f4-41be-90bd-3028a68fccf4.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@27901565), FeedGetRes(feedId=229, contents=zzz, location=zzz, createdAt=2024-12-10 10:51:07, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[e2b79828-fdc6-4015-a3fb-61b3896f861f.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@3f951cfe), FeedGetRes(feedId=228, contents=sss, location=aaaa, createdAt=2024-12-10 10:50:00, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[4cfffab8-1fe3-42fb-b0e1-fc2fdedaec17.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@582f439c), FeedGetRes(feedId=227, contents=dgggg, location=gd, createdAt=2024-12-10 10:49:50, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[2e47d178-ee29-40d6-b1cd-a773e956d19c.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@2731bfc8), FeedGetRes(feedId=226, contents=ggg, location=gg, createdAt=2024-12-10 10:49:12, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[dab5b0f5-bf43-4da5-b967-e3cb51bdbb2a.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@adad76), FeedGetRes(feedId=222, contents=zzz, location=zz, createdAt=2024-12-10 08:56:23, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[f967f878-cd70-4ec4-9acd-089f7b6db5e6.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@17c83371), FeedGetRes(feedId=217, contents=ㅋㅋㅋㅋ, location=ㅋㅋㅋ, createdAt=2024-12-06 09:37:27, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[9ed03755-88f1-4658-a20d-29bb4876b24b.png, e3418cba-faa0-491a-994f-ca87e14a5def.gif, edea2ab7-d8bf-4c25-ad81-a65ac86dbc69.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@35d9a1b7), FeedGetRes(feedId=216, contents=ㅍㅍㅍㅍ, location=ㅍㅍ, createdAt=2024-12-06 09:37:14, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[114415da-5b30-4851-9d33-681c52befb08.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@1f3c973b), FeedGetRes(feedId=215, contents=ㅠㅠㅠㅠㅠㅠㅠㅠ, location=ㅠㅠ, createdAt=2024-12-06 09:35:19, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[3496ae2b-1a05-4253-9339-50394d54d245.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@72974fb7), FeedGetRes(feedId=214, contents=ㅁㄴㅇㅁㄴㅇ, location=ㅁㄴㅇㅁㄴㅇ, createdAt=2024-12-06 09:30:38, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[2759dc87-444a-4b89-bc3a-35751aa27fae.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@2492a92f), FeedGetRes(feedId=213, contents=ㅇㅁㄴㅇㅁㄴㅇ, location=ㅁㄴㅇㅁㄴㅇㅁㄴㅁㄴ, createdAt=2024-12-06 09:29:56, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[bfd5c206-a322-4f6c-a0b6-06e2a021ad8a.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@5cbe6013), FeedGetRes(feedId=212, contents=ㅁㄴㅇ, location=헤헤헤헤헤, createdAt=2024-12-06 09:26:39, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=1, pics=[b6d90a6f-617f-48f8-b1a5-dfd604eb309b.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@27c0b1f0), FeedGetRes(feedId=211, contents=제발요, location=제발, createdAt=2024-12-06 09:23:17, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[009a01a9-7cef-4fc5-876c-5ede45dd4fc2.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@6fe2a848)]
+[2024-12-20 10:17:41 WARN http-nio-8080-exec-9] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to flush: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다]
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJncmVlbkBncmVlbi5rciIsImlhdCI6MTczNDY1NzQ1NywiZXhwIjoxNzM0NjU4NjU3LCJzaWduZWRVc2VyIjoie1wic2lnbmVkVXNlcklkXCI6MixcInJvbGVzXCI6W1wiUk9MRV9VU0VSXCIsXCJST0xFX0FETUlOXCJdfSJ9.ZYj2hqtHlLoNt9MpXR7SQZeriWLMSNUcDKR2GDZcGBJO1okvnyy1EN4weVQ_xN_aMUR1ix-3HJCPPyoKUqtqsA
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [com.green.greengram.feed.FeedController] FeedController > getFeedList > p : FeedGetReq(super=Paging(page=1, size=20, startIdx=0), signedUserId=0, profileUserId=null)
+[2024-12-20 10:17:41 DEBUGhttp-nio-8080-exec-8] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_id AS feedId
+        , A.contents
+        , A.location
+        , A.created_at AS createdAt
+        , A.writer_user_id AS writerUserId
+        , IF(B.nick_name IS NULL, B.uid, B.nick_name) AS writerNm
+        , B.pic AS writerPic
+        , IF(C.feed_id IS NULL, 0, 1) AS isLike
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_user_id = B.user_id
+        LEFT JOIN feed_like C
+        ON A.feed_id = C.feed_id
+        AND C.user_id = 2
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 20
+ {executed in 1 msec}
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [jdbc.resultsettable] 
+|--------|---------|-----------|--------------------|---------------|---------|-----------------------------------------|-------|
+|feed_id |contents |location   |created_at          |writer_user_id |writernm |pic                                      |islike |
+|--------|---------|-----------|--------------------|---------------|---------|-----------------------------------------|-------|
+|238     |hhh      |hh         |2024-12-19 13:19:21 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|237     |         |           |2024-12-19 13:18:07 |9              |asd      |0cc36dd6-7730-414b-874f-35d7e1b3f138.jpg |0      |
+|236     |d        |d          |2024-12-19 13:16:32 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|234     |배고프다     |죽자그냥       |2024-12-19 11:45:28 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|233     |ㄴㄴㄴㄴ     |ㄴㄴㄴ        |2024-12-11 17:21:38 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|232     |ㅎㅎㅎㅎㅎㅎㅎ  |헤헤헤헤헤      |2024-12-10 10:55:19 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|231     |ffffff   |ffff       |2024-12-10 10:54:13 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|230     |fgfgf    |fff        |2024-12-10 10:53:50 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |1      |
+|229     |zzz      |zzz        |2024-12-10 10:51:07 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|228     |sss      |aaaa       |2024-12-10 10:50:00 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|227     |dgggg    |gd         |2024-12-10 10:49:50 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|226     |ggg      |gg         |2024-12-10 10:49:12 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|222     |zzz      |zz         |2024-12-10 08:56:23 |2              |쩡미깜띠기ㅎㅎㅎ |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |0      |
+|217     |ㅋㅋㅋㅋ     |ㅋㅋㅋ        |2024-12-06 09:37:27 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|216     |ㅍㅍㅍㅍ     |ㅍㅍ         |2024-12-06 09:37:14 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|215     |ㅠㅠㅠㅠㅠㅠㅠㅠ |ㅠㅠ         |2024-12-06 09:35:19 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|214     |ㅁㄴㅇㅁㄴㅇ   |ㅁㄴㅇㅁㄴㅇ     |2024-12-06 09:30:38 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|213     |ㅇㅁㄴㅇㅁㄴㅇ  |ㅁㄴㅇㅁㄴㅇㅁㄴㅁㄴ |2024-12-06 09:29:56 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|212     |ㅁㄴㅇ      |헤헤헤헤헤      |2024-12-06 09:26:39 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |1      |
+|211     |제발요      |제발         |2024-12-06 09:23:17 |33             |ㅜㅜ       |a6ace6db-926a-4045-a622-a28541e39ce3.png |0      |
+|--------|---------|-----------|--------------------|---------------|---------|-----------------------------------------|-------|
+
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [com.green.greengram.feed.FeedService] feedIds: [238, 237, 236, 234, 233, 232, 231, 230, 229, 228, 227, 226, 222, 217, 216, 215, 214, 213, 212, 211]
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 DEBUGhttp-nio-8080-exec-8] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT feed_id AS feedId
+        , pic
+        FROM feed_pic
+        WHERE feed_id in
+         (  
+            238
+         , 
+            237
+         , 
+            236
+         , 
+            234
+         , 
+            233
+         , 
+            232
+         , 
+            231
+         , 
+            230
+         , 
+            229
+         , 
+            228
+         , 
+            227
+         , 
+            226
+         , 
+            222
+         , 
+            217
+         , 
+            216
+         , 
+            215
+         , 
+            214
+         , 
+            213
+         , 
+            212
+         , 
+            211
+         )
+ {executed in 0 msec}
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [jdbc.resultsettable] 
+|--------|-----------------------------------------|
+|feed_id |pic                                      |
+|--------|-----------------------------------------|
+|211     |009a01a9-7cef-4fc5-876c-5ede45dd4fc2.png |
+|212     |b6d90a6f-617f-48f8-b1a5-dfd604eb309b.gif |
+|213     |bfd5c206-a322-4f6c-a0b6-06e2a021ad8a.png |
+|214     |2759dc87-444a-4b89-bc3a-35751aa27fae.png |
+|215     |3496ae2b-1a05-4253-9339-50394d54d245.png |
+|216     |114415da-5b30-4851-9d33-681c52befb08.gif |
+|217     |9ed03755-88f1-4658-a20d-29bb4876b24b.png |
+|217     |e3418cba-faa0-491a-994f-ca87e14a5def.gif |
+|217     |edea2ab7-d8bf-4c25-ad81-a65ac86dbc69.png |
+|222     |f967f878-cd70-4ec4-9acd-089f7b6db5e6.png |
+|226     |dab5b0f5-bf43-4da5-b967-e3cb51bdbb2a.png |
+|227     |2e47d178-ee29-40d6-b1cd-a773e956d19c.gif |
+|228     |4cfffab8-1fe3-42fb-b0e1-fc2fdedaec17.png |
+|229     |e2b79828-fdc6-4015-a3fb-61b3896f861f.png |
+|230     |28732f5d-a8f4-41be-90bd-3028a68fccf4.png |
+|231     |ac2c0af2-7000-4d22-a4e1-57d13ecacf0d.gif |
+|232     |b83e7a6d-91aa-4c89-8f9c-9a241076deb5.png |
+|233     |92898300-a3e2-4554-9532-4278613bbaa2.png |
+|234     |d0a1badc-8c31-470d-9fbf-23d3e0f77cba.png |
+|234     |fc1919a9-2952-4efe-b1ca-443a0e6c6332.png |
+|236     |fa2ac4dd-de17-40f1-8fab-637970a6782b.gif |
+|237     |15c1385b-fd78-4bd7-bb79-d9cdd54ea206.gif |
+|238     |62e9156e-f2b7-45da-983c-91bf2db56e93.png |
+|--------|-----------------------------------------|
+
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [com.green.greengram.feed.FeedService] feedPicList: [com.green.greengram.feed.model.FeedPicSel@672a9d64, com.green.greengram.feed.model.FeedPicSel@6b83fb3f, com.green.greengram.feed.model.FeedPicSel@c3dc4c, com.green.greengram.feed.model.FeedPicSel@40015613, com.green.greengram.feed.model.FeedPicSel@737322ca, com.green.greengram.feed.model.FeedPicSel@7dd6598, com.green.greengram.feed.model.FeedPicSel@19e2f893, com.green.greengram.feed.model.FeedPicSel@53198472, com.green.greengram.feed.model.FeedPicSel@391699a9, com.green.greengram.feed.model.FeedPicSel@550bcab6, com.green.greengram.feed.model.FeedPicSel@5b2396e4, com.green.greengram.feed.model.FeedPicSel@4486a3e6, com.green.greengram.feed.model.FeedPicSel@49d0a10e, com.green.greengram.feed.model.FeedPicSel@42059cf8, com.green.greengram.feed.model.FeedPicSel@556b6ea, com.green.greengram.feed.model.FeedPicSel@74beac35, com.green.greengram.feed.model.FeedPicSel@382abb7d, com.green.greengram.feed.model.FeedPicSel@56a612dc, com.green.greengram.feed.model.FeedPicSel@66770f04, com.green.greengram.feed.model.FeedPicSel@67a9c8fb, com.green.greengram.feed.model.FeedPicSel@ab57620, com.green.greengram.feed.model.FeedPicSel@6c63b558, com.green.greengram.feed.model.FeedPicSel@323288ff]
+[2024-12-20 10:17:41 DEBUGhttp-nio-8080-exec-8] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT
+        A.feed_id AS feedId,
+        A.feed_comment_id AS feedCommentId,
+        A.comment,
+        U.user_id AS writerUserId,
+        IF(U.nick_name IS NULL, U.uid, U.nick_name) AS writerName,
+        U.pic AS writerPic
+        FROM feed_comment A
+        LEFT JOIN user U ON A.user_id = U.user_id
+         WHERE A.feed_id IN
+                (
+                    238
+                ,
+                    237
+                ,
+                    236
+                ,
+                    234
+                ,
+                    233
+                ,
+                    232
+                ,
+                    231
+                ,
+                    230
+                ,
+                    229
+                ,
+                    228
+                ,
+                    227
+                ,
+                    226
+                ,
+                    222
+                ,
+                    217
+                ,
+                    216
+                ,
+                    215
+                ,
+                    214
+                ,
+                    213
+                ,
+                    212
+                ,
+                    211
+                ) 
+        AND (
+        SELECT COUNT(*)
+        FROM feed_comment C
+        WHERE C.feed_id = A.feed_id
+        AND C.feed_comment_id  <  A.feed_comment_id
+        )  <  4
+        ORDER BY A.feed_id DESC, A.feed_comment_id DESC
+ {executed in 1 msec}
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [jdbc.resultsettable] 
+|--------|----------------|------------|--------|-----------|-----------------------------------------|
+|feed_id |feed_comment_id |comment     |user_id |writername |pic                                      |
+|--------|----------------|------------|--------|-----------|-----------------------------------------|
+|238     |90              |asdasdsad   |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|238     |88              |asasd       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|238     |85              |asdasdasd   |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|238     |84              |asdasd      |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|236     |83              |sss         |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |68              |ㄱㄱㄱㄱㄱ       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |65              |dddd        |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |62              |ㄹㄹㄹㄹ        |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|232     |61              |ㄹㄹㄹㄹㄹ       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|228     |77              |ㅇㅇㅇㅇㅇ       |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|222     |67              |dddd        |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|217     |51              |ㅇㅇㅇㅇㅇ       |33      |ㅜㅜ         |a6ace6db-926a-4045-a622-a28541e39ce3.png |
+|215     |63              |진짜 변태같이 그렸다 |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|212     |72              |ㅌㅌㅌ         |2       |쩡미깜띠기ㅎㅎㅎ   |00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif |
+|211     |41              |ㅋㅋㅋㅋ        |33      |ㅜㅜ         |a6ace6db-926a-4045-a622-a28541e39ce3.png |
+|211     |40              |ㅋㅋㅋㅋ        |33      |ㅜㅜ         |a6ace6db-926a-4045-a622-a28541e39ce3.png |
+|--------|----------------|------------|--------|-----------|-----------------------------------------|
+
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [com.green.greengram.feed.FeedService] list: [FeedGetRes(feedId=238, contents=hhh, location=hh, createdAt=2024-12-19 13:19:21, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[62e9156e-f2b7-45da-983c-91bf2db56e93.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@5d7c3cfa), FeedGetRes(feedId=237, contents=, location=, createdAt=2024-12-19 13:18:07, writerUserId=9, writerNm=asd, writerPic=0cc36dd6-7730-414b-874f-35d7e1b3f138.jpg, isLike=0, pics=[15c1385b-fd78-4bd7-bb79-d9cdd54ea206.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@671d3d7e), FeedGetRes(feedId=236, contents=d, location=d, createdAt=2024-12-19 13:16:32, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[fa2ac4dd-de17-40f1-8fab-637970a6782b.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@692b4bd2), FeedGetRes(feedId=234, contents=배고프다, location=죽자그냥, createdAt=2024-12-19 11:45:28, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[d0a1badc-8c31-470d-9fbf-23d3e0f77cba.png, fc1919a9-2952-4efe-b1ca-443a0e6c6332.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@599794d6), FeedGetRes(feedId=233, contents=ㄴㄴㄴㄴ, location=ㄴㄴㄴ, createdAt=2024-12-11 17:21:38, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[92898300-a3e2-4554-9532-4278613bbaa2.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@6530e8f2), FeedGetRes(feedId=232, contents=ㅎㅎㅎㅎㅎㅎㅎ, location=헤헤헤헤헤, createdAt=2024-12-10 10:55:19, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[b83e7a6d-91aa-4c89-8f9c-9a241076deb5.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@6bc8dfe7), FeedGetRes(feedId=231, contents=ffffff, location=ffff, createdAt=2024-12-10 10:54:13, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[ac2c0af2-7000-4d22-a4e1-57d13ecacf0d.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@580e7c97), FeedGetRes(feedId=230, contents=fgfgf, location=fff, createdAt=2024-12-10 10:53:50, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=1, pics=[28732f5d-a8f4-41be-90bd-3028a68fccf4.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@3dda7264), FeedGetRes(feedId=229, contents=zzz, location=zzz, createdAt=2024-12-10 10:51:07, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[e2b79828-fdc6-4015-a3fb-61b3896f861f.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@5f4f7a55), FeedGetRes(feedId=228, contents=sss, location=aaaa, createdAt=2024-12-10 10:50:00, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[4cfffab8-1fe3-42fb-b0e1-fc2fdedaec17.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@7255b1bc), FeedGetRes(feedId=227, contents=dgggg, location=gd, createdAt=2024-12-10 10:49:50, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[2e47d178-ee29-40d6-b1cd-a773e956d19c.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@591481a5), FeedGetRes(feedId=226, contents=ggg, location=gg, createdAt=2024-12-10 10:49:12, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[dab5b0f5-bf43-4da5-b967-e3cb51bdbb2a.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@37b391b1), FeedGetRes(feedId=222, contents=zzz, location=zz, createdAt=2024-12-10 08:56:23, writerUserId=2, writerNm=쩡미깜띠기ㅎㅎㅎ, writerPic=00afc96e-0786-4ee5-8be4-8c9b2ef2bd86.gif, isLike=0, pics=[f967f878-cd70-4ec4-9acd-089f7b6db5e6.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@138ac8c0), FeedGetRes(feedId=217, contents=ㅋㅋㅋㅋ, location=ㅋㅋㅋ, createdAt=2024-12-06 09:37:27, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[9ed03755-88f1-4658-a20d-29bb4876b24b.png, e3418cba-faa0-491a-994f-ca87e14a5def.gif, edea2ab7-d8bf-4c25-ad81-a65ac86dbc69.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@4c0d435c), FeedGetRes(feedId=216, contents=ㅍㅍㅍㅍ, location=ㅍㅍ, createdAt=2024-12-06 09:37:14, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[114415da-5b30-4851-9d33-681c52befb08.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@31e9fad1), FeedGetRes(feedId=215, contents=ㅠㅠㅠㅠㅠㅠㅠㅠ, location=ㅠㅠ, createdAt=2024-12-06 09:35:19, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[3496ae2b-1a05-4253-9339-50394d54d245.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@1afccb44), FeedGetRes(feedId=214, contents=ㅁㄴㅇㅁㄴㅇ, location=ㅁㄴㅇㅁㄴㅇ, createdAt=2024-12-06 09:30:38, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[2759dc87-444a-4b89-bc3a-35751aa27fae.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@5f75dc13), FeedGetRes(feedId=213, contents=ㅇㅁㄴㅇㅁㄴㅇ, location=ㅁㄴㅇㅁㄴㅇㅁㄴㅁㄴ, createdAt=2024-12-06 09:29:56, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[bfd5c206-a322-4f6c-a0b6-06e2a021ad8a.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@79447302), FeedGetRes(feedId=212, contents=ㅁㄴㅇ, location=헤헤헤헤헤, createdAt=2024-12-06 09:26:39, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=1, pics=[b6d90a6f-617f-48f8-b1a5-dfd604eb309b.gif], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@7852189), FeedGetRes(feedId=211, contents=제발요, location=제발, createdAt=2024-12-06 09:23:17, writerUserId=33, writerNm=ㅜㅜ, writerPic=a6ace6db-926a-4045-a622-a28541e39ce3.png, isLike=0, pics=[009a01a9-7cef-4fc5-876c-5ede45dd4fc2.png], comment=com.green.greengram.feed.comment.model.FeedCommentGetRes@7b5f6cd6)]
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-8] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-9] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-5] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-7] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-4] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-6] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-10] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:17:41 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:18:52 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-20 10:18:53 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-20 10:34:00 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.12 with PID 5528 (D:\LJM\GreenGramSecurity\build\classes\java\main started by Administrator in D:\LJM\GreenGramSecurity)
+[2024-12-20 10:34:00 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-20 10:34:00 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-20 10:34:00 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-20 10:34:01 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-20 10:34:01 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:34:01 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-20 10:34:01 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[2024-12-20 10:34:01 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-20 10:34:01 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 918 ms
+[2024-12-20 10:34:01 INFO restartedMain] [com.green.greengram.common.model.MyFileUtils] MyFileUtils - 생성자: D:/2024-02/download/greengram_ver3
+[2024-12-20 10:34:01 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: c0f17f2a-1d63-4615-822e-1c2b5b1ce198
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-12-20 10:34:01 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-20 10:34:02 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-12-20 10:34:02 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-20 10:34:02 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-20 10:34:02 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-20 10:34:02 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 2.151 seconds (process running for 2.531)
+[2024-12-20 10:34:04 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-20 10:34:04 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-12-20 10:34:04 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+[2024-12-20 10:34:04 INFO http-nio-8080-exec-1] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJncmVlbkBncmVlbi5rciIsImlhdCI6MTczNDY1NzQ1NywiZXhwIjoxNzM0NjU4NjU3LCJzaWduZWRVc2VyIjoie1wic2lnbmVkVXNlcklkXCI6MixcInJvbGVzXCI6W1wiUk9MRV9VU0VSXCIsXCJST0xFX0FETUlOXCJdfSJ9.ZYj2hqtHlLoNt9MpXR7SQZeriWLMSNUcDKR2GDZcGBJO1okvnyy1EN4weVQ_xN_aMUR1ix-3HJCPPyoKUqtqsA
+[2024-12-20 10:34:04 INFO http-nio-8080-exec-1] [com.green.greengram.feed.comment.FeedCommentController] FeedCommentController > postFeedComment > p: FeedCommentPostReq(feedCommentId=0, feedId=237, userId=0, comment=다죽자)
+[2024-12-20 10:34:04 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-20 10:34:04 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@2393bf0e
+[2024-12-20 10:34:04 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-20 10:34:04 DEBUGhttp-nio-8080-exec-1] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. INSERT INTO feed_comment
+        SET `feed_id` = 237
+        , `user_id` = 2
+        , `comment` = '다죽자'
+ {executed in 11 msec}
+[2024-12-20 10:34:04 DEBUGhttp-nio-8080-exec-1] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: INSERT INTO feed_comment
+        SET `feed_id` = 237
+        , `user_id` = 2
+        , `comment` = '다죽자'
+ {executed in 0 msec}
+[2024-12-20 10:34:04 INFO http-nio-8080-exec-1] [jdbc.resultsettable] 
+|----------|
+|insert_id |
+|----------|
+|95        |
+|----------|
+
+[2024-12-20 10:34:04 INFO http-nio-8080-exec-2] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:34:04 INFO http-nio-8080-exec-3] [com.green.greengram.config.jwt.TokenAuthenticationFilter] authorizationHeader: null
+[2024-12-20 10:47:34 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-20 10:47:34 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
