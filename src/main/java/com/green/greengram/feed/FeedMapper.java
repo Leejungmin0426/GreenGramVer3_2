@@ -13,6 +13,8 @@ public interface FeedMapper {
 
 
     List<FeedGetRes> selFeedList (FeedGetReq p);
+    List<FeedAndPicDto> selFeedWithPicList(FeedGetReq p);
+    List<FeedWithPicCommentDto> selFeedWithPicAndCommentLimit4List(FeedGetReq p);
 
     int deleteFeed (FeedDelReq p);
 
