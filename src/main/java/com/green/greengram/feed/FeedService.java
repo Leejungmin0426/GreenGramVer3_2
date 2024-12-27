@@ -366,7 +366,7 @@ public class FeedService {
         }
 
         // DTO 리스트를 FeedGetRes 리스트로 변환
-        List<FeedGetRes> resList = new ArrayList<>();
+        List<FeedGetRes> resList = new ArrayList<>(dtoList.size());
         for (FeedWithPicCommentDto dto : dtoList) {
             FeedGetRes feedGetRes = new FeedGetRes(dto);
             resList.add(feedGetRes);
